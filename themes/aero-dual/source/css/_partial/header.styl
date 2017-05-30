@@ -21,6 +21,8 @@
       padding remify(50px) 0
     .title
       font-size remify(60px)
+    .subtitle
+      font-size remify(20px)
 
 .site-menu
   text-align center
@@ -44,11 +46,14 @@
 /* mobile style */
 @media only screen and (max-width: 414px)
   .site-header
+    padding remify(32px) 0
     .page-title
       &.with-background-image
-        padding remify(30px) 0
+        padding remify(8px) 0
       .title
         font-size remify(28px)
+      .subtitle
+        display none
   .site-menu
     font-size remify(16px)
     ul li

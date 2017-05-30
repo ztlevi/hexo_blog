@@ -83,6 +83,7 @@ Toggle
 | Spc t r      | Toggle relative line number |
 | **SPC t g**  | toggle golden ration        |
 | **SPC t -**  | Center point                |
+| SPC t f      | Toggle fci-mode             |
 
 Bookmark Related Opeation
 =========================
