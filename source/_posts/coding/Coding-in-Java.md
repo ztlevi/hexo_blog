@@ -1,13 +1,14 @@
 ---
-title: Some tricks in Java
+title: Coding in Java
 categories: coding
-tags: coding
+tags: coding, java
 date: 2017-05-29 22:13:07
 ---
 
+<!--more-->
 # Java
 
-Some basic knowledge of Java in the book "Cracking the Coding Interview, 6th Edition".
+Some basic knowledge of Java in the book[^1].
 
 Your interviewer may be equally---or more---impressed if you can derive the answer than if you automatically knew it. Don't try to bluff though.
 
@@ -20,8 +21,6 @@ public double computeArea(Circle c) {...}
 public double computeArea(Square s) {...}
 ```
 
-<!--more-->
-
 Overriding, however, occurs when a method shares the same name and function signature as another method in its super class.
 
 ## Collection Framework P166
@@ -33,3 +32,10 @@ Java's collection framework is incredibly useful.
 - LinkedList: LinkedList is, of course, Java's built-in ListkedList class. Though it rarely comes up in an interview, it's useful to study because it demonstrates some of the syntax for an iterator.
 - HashMap: The HashMap collection is widely used, both in interviews and in the real world. Also Set collections like HashSet are required to learn.
 
+## Private Constructor P433
+In terms of inheritance, what is the effect of keeping a constructor private?
+
+This has direct implications for inheritance, since a subclass class its parent's conductor. The class A can be inherited, but its own or its parent's inner classes.
+
+
+[^1]: Cracking the Coding Interview, 6th Edition.

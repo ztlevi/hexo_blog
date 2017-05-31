@@ -4,6 +4,26 @@ categories: emacs
 tags: emacs
 date: 2017-05-25 19:58:42
 ---
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Common Stuffs](#common-stuffs)
+- [Debug](#debug)
+- [Search](#search)
+- [Replace](#replace)
+- [Toggle](#toggle)
+- [Bookmark Related Opeation](#bookmark-related-opeation)
+- [File Related Operation](#file-related-operation)
+- [Buffer Related Operation](#buffer-related-operation)
+- [Layout Related Operation](#layout-related-operation)
+- [Window Related Operation](#window-related-operation)
+- [Project Related Operation](#project-related-operation)
+- [Ranger Related Operation](#ranger-related-operation)
+- [Org mode](#org-mode)
+- [JS2 Mode](#js2-mode)
+
+<!-- markdown-toc end -->
+<!--more-->
 This is my Spacemacs personal config on Github: <https://github.com/ztlevi/spacemacs-config>
 
 Common Stuffs
@@ -29,7 +49,6 @@ In key bindings, M stands for Alt key (option key for mac), s for Command key, C
 | SPC ?         | List key bindings                                                              |
 | \*SPC '\*     | Pop up shell                                                                   |
 
-<!--more-->
 Debug
 =====
 

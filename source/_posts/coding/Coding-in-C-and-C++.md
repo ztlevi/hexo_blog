@@ -1,13 +1,26 @@
 ---
-title: Some tricks in C and C++
+title: Coding in C and C++
 categories: coding
-tags: coding
+tags: coding, c, c++
 date: 2017-05-29 22:08:56
 ---
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [C and C++](#c-and-c)
+    - [Pointers an References](#pointers-an-references)
+    - [Hash Table vs STL Map p423](#hash-table-vs-stl-map-p423)
+    - [Virtual Functions p424](#virtual-functions-p424)
+    - [Shallow vs Deep Copy p425](#shallow-vs-deep-copy-p425)
+    - [Volatile p426](#volatile-p426)
+    - [Virtual Base Class: Why does a destructor in base class need to be declared virtual? p427](#virtual-base-class-why-does-a-destructor-in-base-class-need-to-be-declared-virtual-p427)
+
+<!-- markdown-toc end -->
+<!--more-->
 C and C++
 =========
 
-Some basic knowledge of C and C++ in the book "Cracking the Coding Interview, 6th Edition".
+Some basic knowledge of C and C++ in the book[^1].
 
 Pointers an References
 ----------------------
@@ -15,8 +28,6 @@ Pointers an References
 1.  A pointer holds the address of a variable and can be used to perform any operation that could be directly done on the variable, such as accessing and modifying it.
 2.  Note that the size of a pointer varies depending on the architecture: 32 bits on a 32-bit machine and 64 bits on a 64-bit machine.
 3.  A reference is another name (an alias) for a pre-existing object and it does not have memory of its own. Unlike pointers, references cannot be null and cannot be reassigned to another piece of memory.
-
-<!--more-->
 
 Hash Table vs STL Map p423
 --------------------------
@@ -58,3 +69,5 @@ Virtual Base Class: Why does a destructor in base class need to be declared virt
         class Foo{}
         class Bar : public Foo{}
         Foo * p = new Bar()
+
+[^1]: Cracking the Coding Interview, 6th Edition.

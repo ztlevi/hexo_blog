@@ -4,7 +4,7 @@
 
 # Site
 title: "Lady luck is smilin'."
-subtitle: No gun, no cigar. Just a fake cowpuncher...
+subtitle: No gun, no cigar. Just a fake cowpoke...
 description:
 author: Ting Zhou
 language: en
@@ -40,7 +40,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace:
 
@@ -76,3 +76,26 @@ deploy:
 
 # Disqus
 disqus_shortname: ztlevi
+
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    level: 1
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: "➤ "

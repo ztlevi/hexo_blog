@@ -4,6 +4,26 @@ date: 2017-05-25 20:04:43
 categories:
 tags: git
 ---
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Git Commands](#git-commands)
+    - [Create a new repository on the command line](#create-a-new-repository-on-the-command-line)
+    - [1. Creating repository](#1-creating-repository)
+    - [2. Version rollback](#2-version-rollback)
+    - [3. Undo changes and delete files](#3-undo-changes-and-delete-files)
+    - [3.1 Delete commits](#31-delete-commits)
+    - [4. Remote repository](#4-remote-repository)
+        - [Step 1: Create SSH Key](#step-1-create-ssh-key)
+        - [Step 2: Open github -> settings -> SSH and New GPG keys -> New SSH keys](#step-2-open-github---settings---ssh-and-new-gpg-keys---new-ssh-keys)
+        - [a. Add remote repository](#a-add-remote-repository)
+        - [b. Clone the remote repository](#b-clone-the-remote-repository)
+    - [5. Create and merge branch](#5-create-and-merge-branch)
+    - [6. Bug branch](#6-bug-branch)
+    - [7. Cooperation](#7-cooperation)
+
+<!-- markdown-toc end -->
+<!--more-->
 
 Git Commands
 ============
@@ -19,8 +39,6 @@ Create a new repository on the command line
 -   Push an existing repository from the command line
 -   git remote add origin <https://github.com/ztlevi/DeployWebsite.git>
 -   git push -u origin master
-
-<!--more-->
 
 1. Creating repository
 ----------------------
