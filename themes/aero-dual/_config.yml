@@ -5,7 +5,6 @@ menu:
   # change github and email values to your own addresses
   Github: https://github.com/ztlevi
   Leetcode: https://ztlevi.github.io/leetcode
-  RSS: /atom.xml
   About Me: /about
   扯淡: /categories/nonsense
 rss: /atom.xml
@@ -29,10 +28,26 @@ use_header_cover: true
 # index_cover: http://somewhere.com/path/to/banner.jpg
 index_cover: /img/banner.jpg
 
+links:
+  - title: "My Github"
+    url: http://www.github.com/ztlevi
+    icon: "fa fa-github fa-2x"
+  - title: "My LinkedIn"
+    url: http://www.linkedin.com/in/ztlevi
+    icon: "fa fa-linkedin fa-2x"
+  - title: "My RSS"
+    url: /atom.xml
+    icon: "fa fa-rss fa-2x"
+  - title: "My Twitter"
+    url: https://twitter.com/ztlevi
+    icon: "fa fa-twitter fa-2x"
+
 widgets:
+- search
 - category
-- tag
-- archive
+- tags
+- recent_posts  
+- links
 
 # widget behavior
 archive_type: 'monthly'

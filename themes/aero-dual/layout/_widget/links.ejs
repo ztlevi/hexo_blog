@@ -1,0 +1,10 @@
+<% if (theme.links.length){ %>
+<div class="widget">
+	<h4><%= __('Social') %></h4>
+	<ul class="blogroll list-inline">
+	<% for (var i in theme.links){ %>
+		<li><a href="<%- theme.links[i].url %>" title="<%- theme.links[i].title %>" target="_blank"]);"><i class="<%- theme.links[i].icon %>"></i></a></li>
+	<% } %>
+	</ul>
+</div>
+<% } %>

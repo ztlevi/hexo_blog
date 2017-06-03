@@ -1,7 +1,7 @@
 ---
 title: Coding in Java
 categories: coding
-tags: coding, java
+tags: [coding, java]
 date: 2017-05-29 22:13:07
 ---
 

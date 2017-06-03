@@ -1,7 +1,7 @@
 ---
 title: Swift Basics
 categories: coding
-tags: coding, swift
+tags: [coding, swift]
 date: 2017-05-29 22:13:07
 ---
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->

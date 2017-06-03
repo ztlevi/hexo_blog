@@ -2,12 +2,16 @@
 <!-- Home Page Post List -->
 <div class="container">
   <div class="row">
-    <div class="col-lg-10 col-md-10 col-md-offset-1">
+    <div class="col-md-9">
       <% page.posts.each(function(post){ %>
         <%- partial('_partial/index-entry', {post: post, index: true}) %>
       <% }) %>
     </div>
+
+    <% if (theme.widgets.length) { %>
+        <%- partial('_partial/sidebar') %>
+    <% } %>
+    </div>
   </div>
-</div>
 
 <%- partial('_partial/pagination') %>
