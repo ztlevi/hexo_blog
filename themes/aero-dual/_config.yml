@@ -9,7 +9,6 @@ menu:
   扯淡: /categories/nonsense
 rss: /atom.xml
 
-
 # Set# Se to false to disable banner
 use_header_cover: true
 
@@ -41,6 +40,9 @@ links:
   - title: "My Twitter"
     url: https://twitter.com/ztlevi
     icon: "fa fa-twitter fa-2x"
+  - title: "My Facebook"
+    url: https://facebook.com/ztlevi
+    icon: "fa fa-facebook fa-2x"
 
 widgets:
 - search

@@ -1,5 +1,5 @@
 ---
-title: Coding in C and C++
+title: "C and C++: you do not know"
 categories: coding
 tags: [coding, c, c++]
 date: 2017-05-29 22:08:56
