@@ -5,7 +5,7 @@ menu:
   # change github and email values to your own addresses
   Github: https://github.com/ztlevi
   Leetcode: https://ztlevi.github.io/leetcode
-  About Me: /about
+  About: /about
   扯淡: /categories/nonsense
 rss: /atom.xml
 

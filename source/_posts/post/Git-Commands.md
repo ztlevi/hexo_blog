@@ -82,7 +82,7 @@ The commit you are currently on is known as the HEAD commit.
 | git commands                      | Description                                                                       |
 |-----------------------------------|-----------------------------------------------------------------------------------|
 | Git glog                          | See commit ids                                                                    |
-| Git rebase -i commit<sub>id</sub> | Edit the commits from HEAD to commit<sub>id</sub> (delete line to remove commits) |
+| Git rebase -i commit_id | Edit the commits from HEAD to commit_id (delete line to remove commits) |
 | Git push -f origin branch         | Force push to origin branch                                                       |
 
 4. Remote repository

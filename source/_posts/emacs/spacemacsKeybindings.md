@@ -70,16 +70,17 @@ The following command profile the CPU.
 Search
 ======
 
-| Key Bindings        | Description                                                                                                 |
-|---------------------|-------------------------------------------------------------------------------------------------------------|
-| **SPC o d** (M-s o) | **Occur dwim** (see the occurrences in codes and <br>go through them by toggling them), use e to enter edit |
-| e                   | Go to edit mode (Under Occur mode)                                                                          |
-| C-c C-c             | Exit edit mode (Under Occur mode)                                                                           |
-| **C-s**             | Swiper                                                                                                      |
-| **C-c C-r** (F6)    | Ivy-resume, resume the swiper view                                                                          |
-| SPC s               | Grep(g), ag(a), ack(k), pt(t) &lt;br&gt;Project a/g p, Directory t/k f.                                     |
-| **C-c C-e**         | Show results in another buffer, and then edit(e.g. replace).                                                |
-| **C-c C-c**         | On the result buffer, commit changes.                                                                       |
+| Key Bindings               | Description                                                                                                 |
+|----------------------------|-------------------------------------------------------------------------------------------------------------|
+| **SPC o d** (M-s o)        | **Occur dwim** (see the occurrences in codes and <br>go through them by toggling them), use e to enter edit |
+| e                          | Go to edit mode (Under Occur mode)                                                                          |
+| C-c C-c                    | Exit edit mode (Under Occur mode)                                                                           |
+| **C-s**                    | Swiper                                                                                                      |
+| **SPC r i / C-c C-r** (F6) | Ivy-resume, e.g. resume the swiper view                                                                     |
+| **SPC r h**                | Helm-resume, e.g. resume counsel-git view                                                                   |
+| SPC s                      | Grep(g), ag(a), ack(k), pt(t) &lt;br&gt;Project a/g p, Directory t/k f.                                     |
+| **C-c C-e**                | Show results in another buffer, and then edit(e.g. replace).                                                |
+| **C-c C-c**                | On the result buffer, commit changes.                                                                       |
 
 Replace
 =======

@@ -1,18 +1,28 @@
 ---
-title: "Java: you do not know"
+title: "Java: you do not know I"
 categories: coding
 tags: [coding, java]
 date: 2017-05-29 22:13:07
 ---
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
+**Table of Contents**
+
+- [Overloading vs. Overriding P165](#overloading-vs-overriding-p165)
+- [Collection Framework P166](#collection-framework-p166)
+- [Private Constructor P433](#private-constructor-p433)
+- [Return from Finally P433](#return-from-finally-p433)
+- [What's the difference between final, finally, and finalize? P433-435](#whats-the-difference-between-final-finally-and-finalize-p433-435)
+- [Generics vs Templates P435](#generics-vs-templates-p435)
+
+<!-- markdown-toc end -->
 
 <!--more-->
-# Java
 
-Some basic knowledge of Java in the book[^1].
+Some basic knowledge of Java in the book[^1]. Well, I pick the title "you don't know". Precisely, it's something I don't know while you may already knew years ago. But it just sounds so stupid to named after "Java: I don't know"...
 
 Your interviewer may be equally---or more---impressed if you can derive the answer than if you automatically knew it. Don't try to bluff though.
 
-## Overloading vs. Overriding P165
+# Overloading vs. Overriding P165
 
 Overloading is a term used to describe when two methods have the same name but differ in the type or number of arguments.
 
@@ -23,7 +33,7 @@ public double computeArea(Square s) {...}
 
 Overriding, however, occurs when a method shares the same name and function signature as another method in its super class.
 
-## Collection Framework P166
+# Collection Framework P166
 
 Java's collection framework is incredibly useful.
 
@@ -32,19 +42,19 @@ Java's collection framework is incredibly useful.
 - LinkedList: LinkedList is, of course, Java's built-in ListkedList class. Though it rarely comes up in an interview, it's useful to study because it demonstrates some of the syntax for an iterator.
 - HashMap: The HashMap collection is widely used, both in interviews and in the real world. Also Set collections like HashSet are required to learn.
 
-## Private Constructor P433
+# Private Constructor P433
 Q: In terms of inheritance, what is the effect of keeping a constructor private?
 
 This has direct implications for inheritance, since a subclass class its parent's conductor. The class A can be inherited, but its own or its parent's inner classes.
 
-## Return from Finally P433
+# Return from Finally P433
 Q: In Java, does the finally block get executed if we insert a return statement inside the try block o a try-catch-finally?
 
 Yes, it will get executed. The finally block always executes when the try block exits. This ensures that the finally block is executed even if an unexpected exception occurs. But finally is useful for more than just exception handling — it allows the programmer to avoid having cleanup code accidentally bypassed by a return, continue, or break. Putting cleanup code in a finally block is always a good practice, even when no exceptions are anticipated.
 
 Note: If the JVM exits while the try or catch code is being executed, then the finally block may not execute. Likewise, if the thread executing the try or catch code is interrupted or killed, the finally block may not execute even though the application as a whole continues.
 
-## What's the difference between final, finally, and finalize? P433-435
+# What's the difference between final, finally, and finalize? P433-435
 Despite their similar sounding names, **final**, **finally** and **finalize** have very different purposes.
 To speak in very general terms:
 1. The **final** is used to control whether a variable, method, or class is "changeable".

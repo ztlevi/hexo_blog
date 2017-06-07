@@ -3,8 +3,16 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-      <% page.posts.each(function(post){ %>
-        <%- partial('_partial/index-entry', {post: post, index: true}) %>
+      <% page.posts.each(function(post){
+        var if_add = true
+        post.categories.forEach(function(category){
+          if (category.name == "nonsense") {
+            if_add = false
+          }
+        }) %>
+        <% if (if_add) { %>
+          <%- partial('_partial/index-entry', {post: post, index: true}) %>
+        <% } %>
       <% }) %>
     </div>
 
