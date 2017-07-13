@@ -4,27 +4,6 @@ categories: coding
 tags: [coding, swift]
 date: 2017-05-29 22:13:07
 ---
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Constants and Variables](#constants-and-variables)
-- [Type Annotations](#type-annotations)
-- [Naming Constants and Variables](#naming-constants-and-variables)
-- [Printing](#printing)
-- [UInt](#uint)
-- [Floating-Point Numbers](#floating-point-numbers)
-- [Type Safety and Type Inference](#type-safety-and-type-inference)
-- [Numeric Literals](#numeric-literals)
-- [Type Aliases](#type-aliases)
-- [Tuples](#tuples)
-- [Optionals](#optionals)
-    - [If Statements and Forced Unwrapping](#if-statements-and-forced-unwrapping)
-    - [Optional Binding](#optional-binding)
-    - [implicitly unwrapped optional](#implicitly-unwrapped-optional)
-
-<!-- markdown-toc end -->
-
-<!--more-->
 Constants and Variables
 =======================
 
@@ -34,6 +13,8 @@ If a stored value in your code is not going to change, always declare it as a co
 let maximumNumberOfLoginAttempts = 10
 var currentLoginAttempt = 0”
 ```
+
+<!--more-->
 
 Type Annotations
 ================

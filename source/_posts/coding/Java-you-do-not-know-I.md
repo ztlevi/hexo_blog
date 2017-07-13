@@ -4,19 +4,6 @@ categories: coding
 tags: [coding, java]
 date: 2017-05-29 22:13:07
 ---
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Overloading vs. Overriding P165](#overloading-vs-overriding-p165)
-- [Collection Framework P166](#collection-framework-p166)
-- [Private Constructor P433](#private-constructor-p433)
-- [Return from Finally P433](#return-from-finally-p433)
-- [What's the difference between final, finally, and finalize? P433-435](#whats-the-difference-between-final-finally-and-finalize-p433-435)
-- [Generics vs Templates P435](#generics-vs-templates-p435)
-
-<!-- markdown-toc end -->
-
-<!--more-->
 
 Some basic knowledge of Java in the book[^1]. Well, I pick the title "you don't know". Precisely, it's something I don't know while you may already knew years ago. But it just sounds so stupid to named after "Java: I don't know"...
 
@@ -32,6 +19,8 @@ public double computeArea(Square s) {...}
 ```
 
 Overriding, however, occurs when a method shares the same name and function signature as another method in its super class.
+
+<!--more-->
 
 # Collection Framework P166
 

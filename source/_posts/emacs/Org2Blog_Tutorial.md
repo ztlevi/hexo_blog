@@ -4,18 +4,6 @@ categories: emacs
 tags: emacs
 date: 2017-05-25 19:58:42
 ---
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [Publish with Org2Blog and Solution to non-ascii when posting to Wordpress](#publish-with-org2blog-and-solution-to-non-ascii-when-posting-to-wordpress)
-    - [Install packages](#install-packages)
-    - [Configuring Emacs](#configuring-emacs)
-    - [Useage](#useage)
-    - [Solution to non-ascii on Wordpress](#solution-to-non-ascii-on-wordpress)
-
-<!-- markdown-toc end -->
-
-<!--more-->
 Publish with Org2Blog and Solution to non-ascii when posting to Wordpress
 =========================================================================
 
@@ -25,6 +13,8 @@ Install packages
 Install [org2blog](https://github.com/punchagan/org2blog). I put the package in my own emacs configuration folder. Path to org2blog: **~/.spacemacs.d/layers/org2blog/**.
 
 org2blog depends on
+
+<!--more-->
 
 1.  xml-rpc available at Launchpad [Launchpad](http://launchpad.net/xml-rpc-el)
 2.  metaweblog.el available [here](https://github.com/punchagan/metaweblog)

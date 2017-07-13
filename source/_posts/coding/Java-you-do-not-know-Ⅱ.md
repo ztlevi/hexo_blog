@@ -4,18 +4,6 @@ categories: coding
 tags: [coding, java]
 date: 2017-06-05 18:19:51
 ---
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
-
-- [*Treemap*, *HashMap*, *LinkedHashMap* P436](#treemap-hashmap-linkedhashmap-p436)
-- [Object Reflection P437](#object-reflection-p437)
-- [Lambda Expression P438](#lambda-expression-p438)
-- [Lambda Random P439](#lambda-random-p439)
-
-<!-- markdown-toc end -->
-
-<!--more-->
-
 #  *Treemap*, *HashMap*, *LinkedHashMap* P436
 Q: Explain the differences between *TreeMap*, *HashMap*, and *LinkedHashMap*. Provide an example of when each one would be best.
 
@@ -24,6 +12,8 @@ A: The most important distinction between these classes is the time guarantees a
 - *HashMap* offers O(1) lookup and insertion. If you iterate through the keys, though, the ordering of the keys is essentially arbitrary. It is implemented by an array of linked lists.
 - *TreeMap* offers P(logN) lookup and insertion. Keys are ordered, so if you need to iterate through the keys in sorted order, you can. This means that keys must implement the *Comparable* interface. TreeMap is implemented by a Red-Black Tree.
 - *LinkedHashMap* offers O(1) lookup and insertion. Keys are ordered by their insertion order. It is implemented by doubly-linked buckets.
+
+<!--more-->
 
 Q: What suppose to the key ordering with the input ordering {1, -1, 0}?
 
@@ -75,17 +65,17 @@ To implement this with lambda expression, let's break this up into multiple part
 
 ``` java
 int getPopulation(List<Country> countries, String continent) {
-    // Filter countries.
+    /* Filter countries.*/
     Stream<Country> northAmerica = countries.stream.filter(
         country -> {return country.getContinent().equals(continent);}
-        );
+    );
 
-    // Convert to list of populations.
+    /* Convert to list of populations.*/
     Stream<Integer> populations = northAmerica.map(
         c -> c.getPopulation()
-        );
+    );
 
-    // Sum list.
+    /* Sum list.*/
     int population = populations.reduce(0, (a, b) -> a + b);
     return population;
 }
