@@ -124,6 +124,7 @@ File Related Operation
 |-------------|----------------------------------------------|
 | SPC p f     | Open file with projectile or counsel-git     |
 | SPC f f     | Helm-find-file                               |
+| C-M-j       | Ivy immediate done                           |
 | SPC f L     | Find the file across the Whole Mac System    |
 | SPC f l     | find file literally                          |
 | SPC f h     | Open file in hex mode(C-c C-c to exit)       |
