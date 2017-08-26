@@ -27,7 +27,9 @@ Some basic knowledge of C and C++ in the book[^1]. Well, I pick the title "you d
 
 A: A hash table is traditionally implemented with an array of linked lists, where each node in the linked list holds two pieces of data: the value and the original key. When we want to insert a key value pair, we map the key to index in the array using a hash function. The value is then inserted into the linked list at that position.
 
-Note that the elements in a linked list at a particular index of the array do not have the same key. Rather, *hashFunction(key)* is the same for these values.
+> Note that the elements in a linked list at a particular index of the array do not have the same key. Rather, *hashFunction(key)* is the same for these values.
+
+![hash table](https://ws1.sinaimg.cn/large/006tKfTcgy1fixt173z44j30v60iojss.jpg)
 
 In addition, we will want to note the following design criteria:
 
