@@ -265,20 +265,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .typo h1, .typo-h1 {
-  font-size: 1.4em;
-  color: #1999EC
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .typo h2, .typo-h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .typo h3, .typo-h3 {
-  font-size: 1.1em;
+  font-size: 1.25em;
 }
 
 .typo h4, .typo-h4 {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .typo h5, .typo h6, .typo-h5, .typo-h6 {
