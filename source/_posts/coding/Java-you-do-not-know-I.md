@@ -7,11 +7,7 @@ date: 2017-05-29 22:13:07
 
 Some basic knowledge of Java in the book[^1]. Well, I pick the title "you don't know". Precisely, it's something I don't know while you may already knew years ago. But it just sounds so stupid to named after "Java: I don't know"...
 
-Your interviewer may be equally---or more---impressed if you can derive the answer than if you automatically knew it. Don't try to bluff though.
-
-# Overloading vs. Overriding P165
-
-Overloading is a term used to describe when two methods have the same name but differ in the type or number of arguments.
+Your interviewer may be equally---or more---impressed if you can derive the answer than if you automatically knew it. Don't trys.
 
 ``` java
 public double computeArea(Circle c) {...}
