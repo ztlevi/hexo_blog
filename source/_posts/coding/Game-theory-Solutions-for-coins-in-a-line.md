@@ -41,7 +41,7 @@ date: 2017-09-07 23:31:18
 
   For `not (dp[i-1] and dp[i-2])`, `dp[i]` is `True` when and only when there is a `False` in `dp[i]`'s sub states `dp[i-1]` and `dp[i-2]`. Which means, there is a possible lose for his opponent. `dp[i]`'s sub states represent the coins his opponent can gain. We want this value smaller so that we can gain more.
 
-    2. Search
+  2. Search
 
   ```python
   class Solution:
