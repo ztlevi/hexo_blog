@@ -34,6 +34,8 @@ In key bindings, M stands for Alt key (option key for mac), s for Command key, C
 | Key Bindings  | Description                                                                    |
 |---------------|--------------------------------------------------------------------------------|
 | C-g           | Quit                                                                           |
+| **C-o**       | Evil jump backward                                                             |
+| **C-i**       | Evil jump forward                                                              |
 | **C-o**       | Open Action panel when mini dired enabled                                      |
 | C-h k/v/f/d   | Key/ variable/ function/ Documentation                                         |
 | C-h C-k/v/f   | Find key/ variable/ function                                                   |
