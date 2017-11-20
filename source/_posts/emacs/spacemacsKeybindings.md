@@ -4,30 +4,13 @@ categories: emacs
 tags: emacs
 date: 2017-05-25 19:58:42
 ---
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
-**Table of Contents**
 
-- [Common Stuffs](#common-stuffs)
-- [Debug](#debug)
-- [Search](#search)
-- [Replace](#replace)
-- [Toggle](#toggle)
-- [Bookmark Related Opeation](#bookmark-related-opeation)
-- [File Related Operation](#file-related-operation)
-- [Buffer Related Operation](#buffer-related-operation)
-- [Layout Related Operation](#layout-related-operation)
-- [Window Related Operation](#window-related-operation)
-- [Project Related Operation](#project-related-operation)
-- [Ranger Related Operation](#ranger-related-operation)
-- [Org mode](#org-mode)
-- [JS2 Mode](#js2-mode)
+[TOC]
 
-<!-- markdown-toc end -->
 <!--more-->
 This is my Spacemacs personal config on Github: <https://github.com/ztlevi/spacemacs-config>
 
-Common Stuffs
-=============
+## Common Stuffs
 
 In key bindings, M stands for Alt key (option key for mac), s for Command key, C for Control key, SPC for Space key.
 
@@ -51,8 +34,7 @@ In key bindings, M stands for Alt key (option key for mac), s for Command key, C
 | SPC ?         | List key bindings                                                              |
 | \*SPC '\*     | Pop up shell                                                                   |
 
-Debug
-=====
+## Debug
 
 Kill emacs when not responding: `pkill -SIGUSR2 -i emacs`, and use `toggle-debug-on-quit` to enable C-g.
 
@@ -69,8 +51,18 @@ The following command profile the CPU.
 | SPC o (       | Switches to the buffer ‘\*ielm\*’, or creates it if it does not exist. |
 | \*, d m\*     | macrostep-transient-state, expand and collapse funcs and macros        |
 
-Search
-======
+### Python
+
+In python mode, keys are start with prefix key `C-c`.
+| Key Bindings | Description                  |
+|--------------|------------------------------|
+| C-c C-p      | run python                   |
+| C-c C-c      | python shell send buffer     |
+| C-c C-l      | python shell send file       |
+| **C-c C-r**  | python shell send region     |
+| C-c C-z      | python shell switch to shell |
+
+## Search
 
 | Key Bindings               | Description                                                                                                 |
 |----------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -84,8 +76,7 @@ Search
 | **C-c C-e**                | Show results in another buffer, and then edit(e.g. replace).                                                |
 | **C-c C-c**                | On the result buffer, commit changes.                                                                       |
 
-Replace
-=======
+## Replace
 
 1.  Just use vim, `:%s/xxx/yyy/g(c)`
 2.  Mark a key word, then use C-r (evil-quick-replace). It will automatically generate the vim command.
@@ -96,8 +87,7 @@ Replace
 | M-%          | query-replace        |
 | C-M-%        | query-replace-regexp |
 
-Toggle
-======
+## Toggle
 
 | Key Bindings | Description                 |
 |--------------|-----------------------------|
@@ -107,8 +97,7 @@ Toggle
 | **SPC t -**  | Center point                |
 | SPC t f      | Toggle fci-mode             |
 
-Bookmark Related Opeation
-=========================
+## Bookmark Related Opeation
 
 | Key Bindings | Description                                  |
 |--------------|----------------------------------------------|
@@ -119,8 +108,7 @@ Bookmark Related Opeation
 | C-o          | open the selected bookmark in another window |
 | C-x C-d      | Run browse project directory                 |
 
-File Related Operation
-======================
+## File Related Operation
 
 | SPC f       | File related operation                       |
 |-------------|----------------------------------------------|
@@ -145,8 +133,7 @@ File Related Operation
 | SPC f c     | Copy file                                    |
 | SPC f t     | Open neo tree                                |
 
-Buffer Related Operation
-========================
+## Buffer Related Operation
 
 | SPC b       | Buffer related operation   |
 |-------------|----------------------------|
@@ -167,8 +154,7 @@ Buffer Related Operation
 | SPC b w     | Write in dried buffer      |
 | SPC b n/p   | Next/Previous buffer       |
 
-Layout Related Operation
-========================
+## Layout Related Operation
 
 | SPC l     | Layout related operation     |
 |-----------|------------------------------|
@@ -181,8 +167,7 @@ Layout Related Operation
 | SPC l TAB | Quick switch between layouts |
 | SPC l ?   | Toggle layout help           |
 
-Window Related Operation
-========================
+## Window Related Operation
 
 | SPC w             | Window Related Operation            |
 |-------------------|-------------------------------------|
@@ -204,8 +189,7 @@ Window Related Operation
 | SPC w w           | Go to other window one by one       |
 | SPC w W           | Ace windows                         |
 
-Project Related Operation
-=========================
+## Project Related Operation
 
 | SPC p   | Project related operation               |
 |---------|-----------------------------------------|
@@ -215,8 +199,7 @@ Project Related Operation
 | SPC p l | Switch to a project and create a layout |
 | s-p     | Find files in project                   |
 
-Ranger Related Operation
-========================
+## Ranger Related Operation
 
 | SPC a      | Ranger Related Operation                             |
 |------------|------------------------------------------------------|
@@ -253,8 +236,7 @@ Ranger Related Operation
 | C-SPC      | (ranger) mark current file                           |
 | ;C         | (ranger) copy directory / copy and move directory    |
 
-Org mode
-========
+## Org mode
 
 | Key Bindings      | Description |
 |-------------------|-------------|
@@ -263,8 +245,7 @@ Org mode
 | SPC m d (C-c C-d) | Deadline    |
 | C-c C-e           | Org Export  |
 
-JS2 Mode
-========
+## JS2 Mode
 
 | Key Bindings                                | Description                                                                               |
 |---------------------------------------------|-------------------------------------------------------------------------------------------|
