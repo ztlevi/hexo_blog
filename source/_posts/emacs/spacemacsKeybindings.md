@@ -208,9 +208,16 @@ In python mode, keys are start with prefix key `C-c`.
 | h       | (dired) go up directory                                                                         |
 | l       | (dired) find file / enter directory                                                             |
 | **m**   | Mark files. Use it with `C` and `R`                                                             |
+| **u**   | Unmark files. Use it with `C` and `R`                                                           |
 | **t**   | Mark all files.                                                                                 |
+| **U**   | Unmark all files.                                                                               |
 | **C**   | When you will press C to copy, the other dir in the **split pane** will be default destination. |
 | **R**   | Same thing with `C`. `R` stands for rename but also does move                                   |
+| f       | Find file. Can be used to create file.                                                          |
+| +       | Create directory                                                                                |
+| o       | Open file in another window                                                                     |
+| d       | Mark as delete.                                                                                 |
+| x       | Take the punge.                                                                                 |
 
 ## Ranger Related Operation
 
