@@ -239,12 +239,22 @@ In python mode, keys are start with prefix key `C-c`.
 
 ## Org mode
 
-| Key Bindings      | Description |
-|-------------------|-------------|
-| SPC a o o (C-c a) | Org agenda  |
-| SPC m s (C-c C-s) | Schedule    |
-| SPC m d (C-c C-d) | Deadline    |
-| C-c C-e           | Org Export  |
+| Key Bindings      | Description        |
+|-------------------|--------------------|
+| SPC a o o (C-c a) | Org agenda         |
+| SPC m s (C-c C-s) | Schedule           |
+| SPC m d (C-c C-d) | Deadline           |
+| C-c C-e           | Org Export         |
+| C-c C-c           | Org evaluate block |
+
+- Org evaluate block example:
+```org
+#+BEGIN_SRC python :results output
+for i in range(10):
+  print(i)
+#+END_SRC
+```
+
 
 ## JS2 Mode
 
