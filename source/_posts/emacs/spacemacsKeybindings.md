@@ -200,6 +200,18 @@ In python mode, keys are start with prefix key `C-c`.
 | SPC p l | Switch to a project and create a layout |
 | s-p     | Find files in project                   |
 
+## Dired Related Operation
+
+| SPC f j | Dired Related Operation                                                                         |
+| j       | (dired) navigate down                                                                           |
+| k       | (dired) navigate up                                                                             |
+| h       | (dired) go up directory                                                                         |
+| l       | (dired) find file / enter directory                                                             |
+| **m**   | Mark files. Use it with `C` and `R`                                                             |
+| **t**   | Mark all files.                                                                                 |
+| **C**   | When you will press C to copy, the other dir in the **split pane** will be default destination. |
+| **R**   | Same thing with `C`. `R` stands for rename but also does move                                   |
+
 ## Ranger Related Operation
 
 | SPC a      | Ranger Related Operation                             |
