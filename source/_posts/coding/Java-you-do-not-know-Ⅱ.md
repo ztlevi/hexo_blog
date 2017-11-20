@@ -49,7 +49,7 @@ A: This question really comes in two parts. First, We need to generate a list of
 
 Without lambda expression, this is fairly straightforward to do.
 
-``` java
+```java
 int getPopulation(List<Country> countries, String continent) {
     int sum = 0;
     for (Country c : countries) {
@@ -63,7 +63,7 @@ int getPopulation(List<Country> countries, String continent) {
 
 To implement this with lambda expression, let's break this up into multiple parts.
 
-``` java
+```java
 int getPopulation(List<Country> countries, String continent) {
     /* Filter countries.*/
     Stream<Country> northAmerica = countries.stream.filter(
@@ -83,7 +83,7 @@ int getPopulation(List<Country> countries, String continent) {
 
 Alternatively, the following code will disregard the countries no within *continent* according to the sum.
 
-``` java
+```java
 int getPopulation(List<Country> countries, String continent) {
     Stream<Integer> populations = countries.stream().map(
         c -> c.getPopulation().equals(continent) ? c.getPopulation() : 0
@@ -99,7 +99,7 @@ Q: Using Lambda expressions, write a function *List<Integer> get RandomSubset(Li
 
 A: To implement this approach using lambda expressions, we can do the following:
 
-``` java
+```java
 List<Integer> getRandomSubset(List<Integer> list) {
     Random random = new Random();
     List<integer> subset = list.stream().filter(

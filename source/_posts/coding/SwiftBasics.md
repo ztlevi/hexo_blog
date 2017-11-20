@@ -9,7 +9,7 @@ Constants and Variables
 
 If a stored value in your code is not going to change, always declare it as a constant with the let keyword. Use variables only for storing values that need to be able to change.
 
-``` Swift
+```swift
 let maximumNumberOfLoginAttempts = 10
 var currentLoginAttempt = 0”
 ```
@@ -21,7 +21,7 @@ Type Annotations
 
 It is rare that you need to write type annotations in practice. If you provide an initial value for a constant or variable at the point that it is defined, Swift can almost always infer the type to be used for that constant or variable, as described in Type Safety and Type Inference.
 
-``` swift
+```swift
 var welcomeMessage: String
 welcomeMessage = "Hello"
 ```
@@ -33,7 +33,7 @@ Naming Constants and Variables
 
 Constant and variable names can contain almost any character, including Unicode characters:
 
-``` swift
+```swift
 let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
@@ -44,7 +44,7 @@ Printing
 
 Swift uses string interpolation to include the name of a constant or variable as a placeholder in a longer string, and to prompt Swift to replace it with the current value of that constant or variable. Wrap the name in parentheses and escape it with a backslash before the opening parenthesis:
 
-``` swift
+```swift
 print("The current value of friendlyWelcome is \(friendlyWelcome)")”
 ```
 
@@ -85,7 +85,7 @@ Integer literals can be written as:
 
 All of these integer literals have a decimal value of 17:
 
-``` swift
+```swift
 let decimalInteger = 17
 let binaryInteger = 0b10001       // 17 in binary notation
 let octalInteger = 0o21           // 17 in octal notation
@@ -100,7 +100,7 @@ For decimal numbers with an exponent of exp, the base number is multiplied by 10
 
 0xFp2 means 15 x 2<sup>2</sup>, or 60.0. 0xFp-2 means 15 x 2<sup>-2</sup>, or 3.75. All of these floating-point literals have a decimal value of 12.1875:
 
-``` swift
+```swift
 let decimalDouble = 12.1875
 let exponentDouble = 1.21875e1
 let hexadecimalDouble = 0xC.3p0
@@ -108,7 +108,7 @@ let hexadecimalDouble = 0xC.3p0
 
 Numeric literals can contain extra formatting to make them easier to read. Both integers and floats can be padded with extra zeros and can contain underscores to help with readability. Neither type of formatting affects the underlying value of the literal:
 
-``` swift
+```swift
 let paddedDouble = 000123.456
 let oneMillion = 1_000_000
 let justOverOneMillion = 1_000_000.000_000_1

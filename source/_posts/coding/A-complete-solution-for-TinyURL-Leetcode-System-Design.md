@@ -84,24 +84,24 @@ OK, let's talk about the system algorithm. There are following solutions:
    http://site.douban.com/chuan -> c93a360dc7f3eb093ab6e304db516653
 
    - sha1 convert a string into 160 binary bits, generally represented as 20 bytes hex:
-   
+
    http://site.douban.com/chuan -> dff85871a72c73c3eae09e39ffe97aea63047094
 
 These two algorithms could make sure hash values are randomly distributed, but the conflicts are inevitable. Any hash algorithm could have inevitable conflicts.
 
 - Pros: Simple. We could take the first 6 chars of the converted string.
 - Cons: Conflicts.
-     
+
    Solutions: 1. use (long_url + timestamp) as the hash function key. 2. When conflicts, regenerates the hash value(it's different because timestamp changes).
-     
+
    Overall, when urls are over 1 billion, there would be a lot of conflicts and the efficiency could be very low.
 
 2. base62
-Take short_url as a 62 base notation. 6 bits could represent 62^6=57 billion.
+  Take short_url as a 62 base notation. 6 bits could represent 62^6=57 billion.
 
 Each short_url represent a decimal digit. It could be the auto\_increment\_id in SQL database.
 
-``` Java
+```java
 public class URLService {
     HashMap<String, Integer> ltos;
     HashMap<Integer, String> stol;

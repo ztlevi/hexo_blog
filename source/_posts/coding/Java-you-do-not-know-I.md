@@ -9,7 +9,7 @@ Some basic knowledge of Java in the book[^1]. Well, I pick the title "you don't 
 
 Your interviewer may be equally---or more---impressed if you can derive the answer than if you automatically knew it. Don't trys.
 
-``` java
+```java
 public double computeArea(Circle c) {...}
 public double computeArea(Square s) {...}
 ```
@@ -59,7 +59,7 @@ There is an optional **finally** block after the try block or after the catch bl
 
 The automatic garbage collector calls the **finalized**() method just before actually destroying the object. A class can therefore override the **finalized**() method from the Object class in order to define custom behavior during garbage collection.
 
-``` java
+```java
 protected void finalize() throws Throwable {
     /* Close open files, release resources, etc */
 }
@@ -74,14 +74,14 @@ The implementation of Java generics is rooted in an idea of "type erasure". This
 
 For example, suppose you have the Java code below:
 
-``` java
+```java
 Vector<String> vector = new Vector<String>();
 vector.add(new String("hello"));
 String str = vector.get(0)
 ```
 During the compilation, this code is re-written into:
 
-``` java
+```java
 Vector vector = new Vector();
 vector.add(new String("hello"));
 String str = (String) vector.get(0);

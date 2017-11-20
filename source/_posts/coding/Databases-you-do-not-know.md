@@ -8,7 +8,7 @@ date: 2017-07-05 10:20:33
 # Implicit and Explicit join p169
 ## Explicit Join
 
-``` sql
+```sql
 SELECT CourseName, TeacherName
 From Courses INNER JOIN TEACHERS
 ON Courses.TeacherID = Teachers.TeacherID
@@ -16,7 +16,7 @@ ON Courses.TeacherID = Teachers.TeacherID
 
 ## Implicit Join
 
-``` sql
+```sql
 SELECT CourseName, TeacherName
 FROM Courses, Teachers
 WHERE Courses.TeacherID = Teachers.TeacherID
