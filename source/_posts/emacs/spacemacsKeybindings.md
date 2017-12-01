@@ -17,7 +17,7 @@ In key bindings, M stands for Alt key (option key for mac), s for Command key, C
 | Key Bindings  | Description                                                                    |
 |---------------|--------------------------------------------------------------------------------|
 | C-g           | Quit                                                                           |
-| ! !           | evil shell command output to the current line                                  |
+| **! !**       | evil shell command output to the current line                                  |
 | **C-o**       | Evil jump backward                                                             |
 | **C-i**       | Evil jump forward                                                              |
 | **C-o**       | Open Action panel when mini dired enabled                                      |

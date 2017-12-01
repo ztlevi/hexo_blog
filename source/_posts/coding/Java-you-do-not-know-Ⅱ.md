@@ -24,7 +24,7 @@ A:
 
 Q: When might you need ordering in real life?
 
-A: 
+A:
 - Suppose you were creating a mapping of names to *Person* objects. You might want to periodically output the people in alphabetical order by name. A *TreeMap* lets you do this.
 - A *TreeMap* also offers a way to, given a name, output the next 10 people. This could be useful for a "More" function in many applications.
 - A *LinkedHashMap* is useful whenever you need the ordering of keys to match the ordering of insertion. This might be useful in a caching situation, when you want to delete the oldest item.
