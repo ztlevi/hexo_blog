@@ -5,14 +5,13 @@ tags: emacs
 date: 2017-05-25 19:58:42
 ---
 
-[TOC]
-
-<!--more-->
 This is my Spacemacs personal config on Github: <https://github.com/ztlevi/spacemacs-config>
 
 ## Common Stuffs
 
 In key bindings, M stands for Alt key (option key for mac), s for Command key, C for Control key, SPC for Space key.
+
+<!--more-->
 
 | Key Bindings  | Description                                                                    |
 |---------------|--------------------------------------------------------------------------------|
