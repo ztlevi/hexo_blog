@@ -1,8 +1,8 @@
 ---
 title: The Minimal Spacemacs Tweaks for Jetbrain IDEs
 date: 2017-12-05 01:45:50
-categories:
-tags:
+categories: post
+tags: spacemacs, jetbrain
 ---
 
 # Another Spacemacs configuration for Jetbrain IDEs
@@ -13,7 +13,7 @@ Like I said in my previous post, space way is good for Vim users and only Vim ca
 
 Welcome to the heaven!!!
 
-![img](https://tctechcrunch2011.files.wordpress.com/2015/08/safe_image.gif)
+<img src="https://tctechcrunch2011.files.wordpress.com/2015/08/safe_image.gif" alt="" style="width:500px;margin:auto;display:block;"/>
 
 <!--more-->
 
@@ -28,7 +28,7 @@ Think about how you invoke commands in VSCode before. When you want to call the 
 This looks so stupid when you compare it with just `Space Space` in Vim's normal or visual mode. And by saying `Space Space`, it's a sticky key binding which means you just type `<space>` key twice in sequence. And you can just set your hands as the default typing position shown in this picture.
 
 
-![](https://ws2.sinaimg.cn/large/006tNc79gy1fm3jb9l72jj30r80i6ae1.jpg)
+<img src="https://ws2.sinaimg.cn/large/006tNc79gy1fm3jb9l72jj30r80i6ae1.jpg" alt="" style="width:500px;margin:auto;display:block;"/>
 
 ## Prefix key
 
