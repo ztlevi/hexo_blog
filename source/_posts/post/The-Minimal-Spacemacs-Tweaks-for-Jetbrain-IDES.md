@@ -2,7 +2,7 @@
 title: The Minimal Spacemacs Tweaks for Jetbrain IDEs
 date: 2017-12-05 01:45:50
 categories: post
-tags: spacemacs, jetbrain
+tags: spacemacs, jetbrain, space, intellij idea, pycharm, webstorm
 ---
 
 # Another Spacemacs configuration for Jetbrain IDEs
