@@ -2,7 +2,7 @@
 title: The Minimal Spacemacs Tweaks for VSCode
 date: 2017-12-02 00:35:26
 categories: post
-tags: spacemacs, vscode, space, intellij idea, pycharm, webstorm
+tags: [spacemacs, vscode, space, intellij idea, pycharm, webstorm]
 ---
 
 # The space way
