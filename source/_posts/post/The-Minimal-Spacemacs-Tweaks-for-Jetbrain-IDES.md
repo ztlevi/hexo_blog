@@ -40,43 +40,46 @@ Since sticky keys are just key sequences, you can cluster a lot of similar comma
 
 For the normal and visual mode, They are pretty much the same. But they can do much more now in space way.
 
+The `<space> w m` and other window pop up combination is just beautiful.
+
+The most used ones are in bold text.
+
 > Note: The leader key is `<space>`
 
-| Key                 | Description                                       |
-| ------------------- | ----------------------------------                |
-| `<leader>` space    | Go to Action                                      |
-| `<leader>` b b      | Recent files                                      |
-| `<leader>` b i      | Active structure tool window                      |
-| `<leader>` b p      | Fire structure pop up (similar to structure tool) |
-| `<leader>` b u      | Reopen Closed Tab                                 |
-| `<leader>` f f      | Go to file                                        |
-| `<leader>` f t      | Active file tree window                           |
-| `<leader>` f s      | save file                                         |
-| `<leader>` f S      | save all                                          |
-| `<leader>` s p      | Search in project                                 |
-| `<leader>` r p      | Replace in project                                |
-| `<leader>` r        | reload `~/.ideavimrc`                             |
-| `<leader>` '        | Active terminal window                            |
-| `<leader>` e        | show error description                            |
-| `<leader>` c        | Go to Class                                       |
-| `<leader>` a l      | show the action list                              |
-| `<leader>` g s      | Vsc quick list pop up                             |
-| `<leader>` g S      | Active version control window                     |
-| `<leader>` w [lhjk] | navigate window                                   |
-| `<leader>` w v      | split window vertically                           |
-| `<leader>` w s      | split window horizontally                         |
-| `<leader>` w c      | close window                                      |
-| `<leader>` w m      | hide all windows except the editor tabs           |
-| C-o                 | Go back                                           |
-| C-i                 | Forward                                           |
-| g d                 | Go to declaration                                 |
-| g h                 | Go to Documentation                               |
-| g s                 | Go to Symbol                                      |
-| , =                 | beautify file                                     |
-| z c                 | collapse region                                   |
-| z o                 | expand region                                     |
-| z C                 | collapse all region                               |
-| z O                 | expand all region                                 |
+| Key                 | Description                                                                  |
+| ------------------- | ----------------------------------                                           |
+| `<leader>` space    | **Go to Action**                                                             |
+| `<leader>` b b      | **Recent files** (You can still use `command+e` or `ctrl+e`)                 |
+| `<leader>` b i      | **Active structure tool window**                                             |
+| `<leader>` b p      | Fire structure pop up (similar to structure tool)                            |
+| `<leader>` b u      | Reopen Closed Tab                                                            |
+| `<leader>` f f      | Go to file                                                                   |
+| `<leader>` f t      | **Active file tree window**                                                  |
+| `<leader>` f s      | save all files (I still use `command+s` or `ctrl+s`)                         |
+| `<leader>` s p      | **Search in project**                                                        |
+| `<leader>` r p      | **Replace in project**                                                       |
+| `<leader>` r        | reload `~/.ideavimrc`                                                        |
+| `<leader>` '        | Active terminal window                                                       |
+| `<leader>` e        | show error description                                                       |
+| `<leader>` c        | Go to Class                                                                  |
+| `<leader>` a l      | show the action list                                                         |
+| `<leader>` g s      | **Vsc quick list pop up**                                                    |
+| `<leader>` g S      | Active version control window                                                |
+| `<leader>` w [lhjk] | **navigate window**                                                          |
+| `<leader>` w v      | **split window vertically**                                                  |
+| `<leader>` w s      | split window horizontally                                                    |
+| `<leader>` w c      | close window                                                                 |
+| `<leader>` w m      | **hide all windows except the editor tabs** (You can invoke again to revert) |
+| C-o                 | Go back                                                                      |
+| C-i                 | Forward                                                                      |
+| g d                 | **Go to declaration**                                                        |
+| g h                 | Go to Documentation                                                          |
+| g s                 | Go to Symbol                                                                 |
+| , =                 | **beautify file**                                                            |
+| z c                 | **collapse region**                                                          |
+| z o                 | **expand region**                                                            |
+| z C                 | collapse all region                                                          |
+| z O                 | expand all region                                                            |
 
 # Install
 1. Install ideaVim and create a `.ideavimrc` file in home directory, just like `~/.ideavimrc`.
@@ -113,6 +116,9 @@ For the normal and visual mode, They are pretty much the same. But they can do m
   ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fm6eh3f8mgj31hg0fk42l.jpg)
 
 3. To bind the actions under `<space>`, put the following script in the `~/.ideavimrc`.
+
+  The ugly `<Backspace><Backspace><Backspace><Backspace><Backspace>` is because when we enter the command mode from visual mode, we have `:'<,'>`. The extra chars need to be deleted before we invoke the actions.
+
   ```
   let mapleader = " "
 
