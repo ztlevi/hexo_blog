@@ -1,5 +1,5 @@
 ---
-title: The Minimal Spacemacs Tweeks for VSCode
+title: The Minimal Spacemacs Tweaks for VSCode
 date: 2017-12-02 00:35:26
 categories: post
 tags: spacemacs, vscode
