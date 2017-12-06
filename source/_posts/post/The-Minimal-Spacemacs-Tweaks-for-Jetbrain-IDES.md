@@ -7,7 +7,7 @@ tags: [spacemacs, jetbrain, space, intellij idea, pycharm, webstorm]
 
 # Another Spacemacs configuration for Jetbrain IDEs
 
-Recently I'm working on a React Native project. I have tried using Emacs to do the coding, but the syntax is so different and I cannot really pick up the whole new stuff without a fancy auto-completion and finding definitions. That's why I pick up Webstorm as a workaround. And there, I find a way to build your Jetbrain IDEs just like Spacemacs.
+Recently, I'm working on a React Native project. I have tried using Emacs to do the coding, but I cannot really pick up the whole new stuff without a fancy auto-completion or finding definitions since the syntax of React is so different and special. That's why I pick up Webstorm as a workaround. And there, I find a way to build my Jetbrain IDEs just like Spacemacs.
 
 Like I said in my previous post, space way is good for Vim users and only Vim can do this because it has other modes other than just insert mode. In this case, key bindings will never be a problem. We are using the sticky key sequences and prefix key for memorization.
 
@@ -233,12 +233,12 @@ The most used ones are in bold text.
 
 5. There are other options you might want to add.
 
-   ```
-    set gdefault
-    set smartcase
+  ```
+  set gdefault
+  set smartcase
 
-    " Integrate with system clipboard
-    set clipboard=unnamedplus,unnamed
+  " Integrate with system clipboard
+  set clipboard=unnamedplus,unnamed
 
-    set surround
-   ```
+  set surround
+  ```
