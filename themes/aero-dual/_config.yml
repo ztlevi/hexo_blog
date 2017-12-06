@@ -46,10 +46,10 @@ links:
 
 widgets:
 - search
+- links
 - category
 - tags
-- recent_posts  
-- links
+- recent_posts
 
 # widget behavior
 archive_type: 'monthly'

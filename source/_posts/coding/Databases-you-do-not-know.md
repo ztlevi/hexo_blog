@@ -24,7 +24,7 @@ WHERE Courses.TeacherID = Teachers.TeacherID
 
 <!--more-->
 
-# Denormalized vs. Normalized Databases p169
+# Denormalized vs. Normalized Databases <p169>
 Normalized databases are designed to minimize redundancy, while denormalized databases are designed to optimized read time.
 
 In a traditional normalized database with data like Courses and Teachers, Courses might contain a column called TeacherID, which i a foreign key to Teacher. One benefit of this is that information about the teacher (name, address, etc.) is only stored once in the database. The drawback is that many common queries will require expensive joins.
@@ -39,7 +39,7 @@ Instead, we can denormalize the database by storing redundant data. For example,
 | Data maybe inconsistent. Which is the "correct" value for a piece of data? |                                                                                                                     |
 | Data redundancy necessitates more storage.                                 |                                                                                                                     |
 
-# Small Database Design p171
+# Small Database Design <p171>
 ## Step 1: Handle Ambiguity
 Database questions often have some ambiguity, intentionally or unintentionally. Before you proceed with your design, you must understand exactly what you need to design.
 

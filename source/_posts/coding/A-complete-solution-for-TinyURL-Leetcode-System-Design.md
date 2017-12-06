@@ -1,7 +1,7 @@
 ---
 title: A complete solution for TinyURL (Leetcode System Design)
 categories: coding
-tags: [Leetcode, coding]
+tags: [leetcode, coding]
 date: 2017-07-13 18:02:06
 ---
 
@@ -34,7 +34,7 @@ Write 100, Read 1K
 
 Storage is not the problem for this kind of system. Service like Netflix may have storage issues.
 
-Through SN analysis, we could have a big picture of the system. In general, this system is not hard and could be handled by a single SSD Machine. 
+Through SN analysis, we could have a big picture of the system. In general, this system is not hard and could be handled by a single SSD Machine.
 
 # A: API
 Only one service: URLService
@@ -44,7 +44,7 @@ Only one service: URLService
 - Interface:
 - URLService.encode(String long_url)
 - URLService.decode(String short_url)
-- Web Layer: 
+- Web Layer:
 - REST API:
 - GET: /{short_url}, return a http redirect response(301)
 - POST: goo.gl method - [google shorten URL](https://developers.google.com/url-shortener/v1/getting_started#actions)
@@ -125,14 +125,14 @@ public class URLService {
         int n = base62ToBase10(url);
         return stol.get(n);
     }
-    
+
     public int base62ToBase10(String s) {
         int n = 0;
         for (int i = 0; i < s.length(); i++) {
             n = n * 62 + convert(s.charAt(i));
         }
         return n;
-        
+
     }
     public int convert(char c) {
         if (c >= '0' && c <= '9')
@@ -211,4 +211,3 @@ Each time we add a new machine, put half of the range of the most used machine t
 
 # More Optimization
 Put Chinese DB in China, American DB in the United States. Use geographical information as the sharding key, e.g. 0 for Chinese websites, 1 for American websites.
-

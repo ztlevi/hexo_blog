@@ -4,7 +4,7 @@ categories: coding
 tags: [coding, java]
 date: 2017-06-05 18:19:51
 ---
-#  *Treemap*, *HashMap*, *LinkedHashMap* P436
+#  *Treemap*, *HashMap*, *LinkedHashMap* <P436>
 Q: Explain the differences between *TreeMap*, *HashMap*, and *LinkedHashMap*. Provide an example of when each one would be best.
 
 A: The most important distinction between these classes is the time guarantees and the ordering of the keys.
@@ -31,7 +31,7 @@ A:
 
 Generally, unless there is a reason not to, you would use *HashMap*.
 
-# Object Reflection P437
+# Object Reflection <P437>
 
 Q: Explain what object reflection is in Java and why it is useful?
 
@@ -41,7 +41,7 @@ A: Object Reflection is a feature in Java that provides a way to get reflective 
 2. Creating a new instance of a class.
 3. Getting and setting the object fields directly by getting field reference, regardless of what the access modifier is.
 
-# Lambda Expression P438
+# Lambda Expression <P438>
 
 Q: There is a class *Country* that has methods *getContinent()* and *getPopulation()*. Write a function *int getPopulation(List<Country> countries, String continent)* that computes the total population of a given continent, given a list of all countries and the name of a continent.
 
@@ -93,7 +93,7 @@ int getPopulation(List<Country> countries, String continent) {
 }
 ```
 
-# Lambda Random P439
+# Lambda Random <P439>
 
 Q: Using Lambda expressions, write a function *List<Integer> get RandomSubset(List<Integer> list)* that returns a random subset of arbitrary size. All subsets (including the empty set) should be equally likely to be chosen.
 

@@ -1,8 +1,8 @@
 ---
 title: My 2017 Hackintosh Build!
 date: 2017-06-20 13:29:37
-categories: Mac
-tags: [Mac, Hackintosh]
+categories: mac
+tags: [mac, hackintosh]
 ---
 
 Hello, guys!

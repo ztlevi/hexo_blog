@@ -15,7 +15,7 @@ timezone:
 url: https://ztlevi.github.io
 # url: localhost:4000
 root: /
-permalink: :title/
+permalink: posts/:title/
 permalink_defaults:
 
 # Directory

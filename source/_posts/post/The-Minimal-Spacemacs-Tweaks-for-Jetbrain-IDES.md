@@ -55,13 +55,18 @@ The most used ones are in bold text.
 | `<leader>` b u      | Reopen Closed Tab                                                            |
 | `<leader>` f f      | Go to file                                                                   |
 | `<leader>` f t      | **Active file tree window**                                                  |
+| `<leader>` f d      | Dash Launcher (You have to install Dash first)                               |
 | `<leader>` f s      | save all files (I still use `command+s` or `ctrl+s`)                         |
+| `<leader>` d d      | **Debug**                                                                    |
+| `<leader>` d D      | Debug Class                                                                  |
+| `<leader>` r r      | **Run**                                                                      |
+| `<leader>` r R      | Run Class                                                                    |
 | `<leader>` s p      | **Search in project**                                                        |
 | `<leader>` r p      | **Replace in project**                                                       |
-| `<leader>` r        | reload `~/.ideavimrc`                                                        |
+| `<leader>` R       | reload `~/.ideavimrc`                                                        |
 | `<leader>` '        | Active terminal window                                                       |
-| `<leader>` e        | show error description                                                       |
-| `<leader>` c        | Go to Class                                                                  |
+| `<leader>` ee       | show error description                                                       |
+| `<leader>` c c      | Go to Class                                                                  |
 | `<leader>` a l      | show the action list                                                         |
 | `<leader>` g s      | **Vsc quick list pop up**                                                    |
 | `<leader>` g S      | Active version control window                                                |
@@ -159,34 +164,45 @@ The most used ones are in bold text.
   " ============================================================================
 
   nmap <leader><Space> :action GotoAction<CR>
-  nmap <leader>c       :action GotoClass<CR>
+  nmap <leader>cc      :action GotoClass<CR>
   nmap <leader>ff      :action GotoFile<CR>
   nmap <leader>ft      :action ActivateProjectToolWindow<CR>
+  nmap <leader>fs      :action SaveAll<CR>
+  nmap <leader>fd      :action DashLauncherAction<CR>
   nmap <leader>bb      :action RecentFiles<CR>
   nmap <leader>bi      :action ActivateStructureToolWindow<CR>
+  nmap <leader>bp      :action FileStructurePopup<cr>
   nmap <leader>bu      :action ReopenClosedTab<CR>
+  nmap <leader>dd      :action Debug<CR>
+  nmap <leader>dD      :action DebugClass<CR>
+  nmap <leader>rr      :action Run<CR>
+  nmap <leader>rR      :action RunClass<CR>
+  nmap <leader>im      :action ImplementMethods<CR>
+  nmap <leader>ee      :action ShowErrorDescription<cr>
   nmap <leader>'       :action ActivateTerminalToolWindow<CR>
   nmap gd              :action GotoDeclaration<cr>
   nmap gh              :action QuickJavaDoc<CR>
   nmap gs              :action GotoSymbol<cr>
-  nmap <leader>bp      :action FileStructurePopup<cr>
-  nmap <leader>e       :action ShowErrorDescription<cr>
   nmap ,=              :action ReformatCode<CR>
   nmap <c-o>           :action Back<cr>
   nmap <c-i>           :action Forward<cr>
-  " tab is used in karabiner as <C-i>, <C-d> as delete
-  nmap <tab>           :action Forward<cr>
-  nmap <delete>        <C-d>
 
   vmap <leader><Space> :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoAction<CR>
-  vmap <leader>c       :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoClass<CR>
+  vmap <leader>cc      :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoClass<CR>
   vmap <leader>ff      :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoFile<CR>
   vmap <leader>ft      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateProjectToolWindow<CR>
+  vmap <leader>fs      :<Backspace><Backspace><Backspace><Backspace><Backspace>actio SaveAll<CR>
+  vmap <leader>fd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DashLauncherAction<CR>
   vmap <leader>bb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RecentFiles<CR>
   vmap <leader>bu      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReopenClosedTab<CR>
   vmap <leader>bi      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateStructureToolWindow<CR>
   vmap <leader>bp      :<Backspace><Backspace><Backspace><Backspace><Backspace>action FileStructurePopup<cr>
-  vmap <leader>e       :<Backspace><Backspace><Backspace><Backspace><Backspace>action ShowErrorDescription<cr>
+  vmap <leader>dd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Debug<CR>
+  vmap <leader>dD      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DebugClass<CR>
+  vmap <leader>rr      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Run<CR>
+  vmap <leader>rR      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RunClass<CR>
+  vmap <leader>im      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ImplementMethods<CR>
+  vmap <leader>ee      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ShowErrorDescription<cr>
   vmap <leader>'       :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateTerminalToolWindow<CR>
   vmap ,=              :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReformatCode<CR>
   vmap <c-o>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Back<cr>
@@ -197,8 +213,8 @@ The most used ones are in bold text.
   vmap <CR> :
 
   " Reload .ideavimrc
-  nmap <leader>r :source ~/.ideavimrc<CR>
-  vmap <leader>r :<Backspace><Backspace><Backspace><Backspace><Backspace>source ~/.ideavimrc<CR>
+  nmap <leader>R :source ~/.ideavimrc<CR>
+  vmap <leader>R :<Backspace><Backspace><Backspace><Backspace><Backspace>source ~/.ideavimrc<CR>
 
   " check the action list
   nmap <leader>al :actionlist<CR>
