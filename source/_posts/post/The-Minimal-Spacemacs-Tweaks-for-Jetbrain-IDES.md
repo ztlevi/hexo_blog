@@ -84,6 +84,8 @@ The most used ones are in bold text.
 # Install
 1. Install ideaVim and create a `.ideavimrc` file in home directory, just like `~/.ideavimrc`.
 
+  > In case you want to sync your settings across multiple machines, you should checkout the **Setting Repository** [here](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository).
+
 2. If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following script to `~/.ideavimrc`.
 
   ```
