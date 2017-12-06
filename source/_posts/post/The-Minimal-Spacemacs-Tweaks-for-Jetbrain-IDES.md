@@ -175,6 +175,7 @@ The most used ones are in bold text.
   nmap <leader>bu      :action ReopenClosedTab<CR>
   nmap <leader>dd      :action Debug<CR>
   nmap <leader>dD      :action DebugClass<CR>
+  nmap <leader>tt      :action ToggleLineBreakpoint<CR>
   nmap <leader>rr      :action Run<CR>
   nmap <leader>rR      :action RunClass<CR>
   nmap <leader>im      :action ImplementMethods<CR>
@@ -199,6 +200,7 @@ The most used ones are in bold text.
   vmap <leader>bp      :<Backspace><Backspace><Backspace><Backspace><Backspace>action FileStructurePopup<cr>
   vmap <leader>dd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Debug<CR>
   vmap <leader>dD      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DebugClass<CR>
+  vmap <leader>tt      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleLineBreakpoint<CR>
   vmap <leader>rr      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Run<CR>
   vmap <leader>rR      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RunClass<CR>
   vmap <leader>im      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ImplementMethods<CR>
