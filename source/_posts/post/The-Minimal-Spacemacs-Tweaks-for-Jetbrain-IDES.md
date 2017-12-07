@@ -59,11 +59,12 @@ The most used ones are in bold text.
 | `<leader>` f s      | save all files (I still use `command+s` or `ctrl+s`)                         |
 | `<leader>` d d      | **Debug**                                                                    |
 | `<leader>` d D      | Debug Class                                                                  |
+| `<leader>` t t      | **Toggle Line Breakpoint**                                                                 |
 | `<leader>` r r      | **Run**                                                                      |
 | `<leader>` r R      | Run Class                                                                    |
 | `<leader>` s p      | **Search in project**                                                        |
 | `<leader>` r p      | **Replace in project**                                                       |
-| `<leader>` R       | reload `~/.ideavimrc`                                                        |
+| `<leader>` R        | reload `~/.ideavimrc`                                                        |
 | `<leader>` '        | Active terminal window                                                       |
 | `<leader>` ee       | show error description                                                       |
 | `<leader>` c c      | Go to Class                                                                  |
