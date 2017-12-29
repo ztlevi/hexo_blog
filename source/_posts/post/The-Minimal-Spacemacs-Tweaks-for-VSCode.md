@@ -1,21 +1,23 @@
 ---
-title: The Minimal Spacemacs Tweaks for VSCode
+title: Spacemacs/Space-Vim Config for VSCode
 date: 2017-12-02 00:35:26
 categories: post
 tags: [spacemacs, vscode, space, intellij idea, pycharm, webstorm]
 ---
 
 # The space way
+
 ## Leader key
+
 Using `<space>` key as the leader is a very popular way of editing, navigation and commanding. There is never an easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
 
 ## Sticky key
+
 Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your left hand's two fingers on `Ctrl + Shift` key or `Command + Shift` key and press `p`. And note that it's a key chord combination when you actually press these keys.
 
 This looks so stupid when you compare it with just `Space Space` in Vim's normal or visual mode. And by saying `Space Space`, it's a sticky key bindings which means you just type `<space>` key twice in sequence. And you can just set your hands as the default typing position shown in this picture.
 
 <!--more-->
-
 
 ![](https://ws2.sinaimg.cn/large/006tNc79gy1fm3jb9l72jj30r80i6ae1.jpg)
 
@@ -65,7 +67,8 @@ As for the normal and visual mode, They are pretty much the same. But they can d
 
 ```json
 {
-  "": [{
+  "": [
+    {
       "before": ["<C-f>"],
       "after": ["<right>"]
     },
@@ -83,41 +86,51 @@ As for the normal and visual mode, They are pretty much the same. But they can d
     },
     {
       "before": ["<C-e>"],
-      "commands": [{
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "cursorEnd",
+          "when": "editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["<C-a>"],
-      "commands": [{
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "cursorHome",
+          "when": "editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["<C-d>"],
-      "commands": [{
-        "command": "deleteRight",
-        "when": "editorTextFocus && !editorReadonly"
-      }]
+      "commands": [
+        {
+          "command": "deleteRight",
+          "when": "editorTextFocus && !editorReadonly"
+        }
+      ]
     }
   ],
   "vim.otherModesKeyBindingsNonRecursive": [
-  // comment out if you don't want to use <C-a> <C-e> in normal or visual mode
+    // comment out if you don't want to use <C-a> <C-e> in normal or visual mode
     {
       "before": ["<C-a>"],
-      "commands": [{
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "cursorHome",
+          "when": "editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["<C-e>"],
-      "commands": [{
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "cursorEnd",
+          "when": "editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["<C-k>"],
@@ -126,87 +139,111 @@ As for the normal and visual mode, They are pretty much the same. But they can d
     // ivy buffer
     {
       "before": ["<leader>", "b", "b"],
-      "commands": [{
-        "command": "workbench.action.quickOpen"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
     },
     // M-x
     {
       "before": ["<leader>", " "],
-      "commands": [{
-        "command": "workbench.action.showCommands"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.showCommands"
+        }
+      ]
     },
     // go to last tab
     {
       "before": ["<leader>", "<tab>"],
-      "commands": [{
-        "command": "workbench.action.navigateLast"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.navigateLast"
+        }
+      ]
     },
     // go to explorer
     {
       "before": ["<leader>", "f", "f"],
-      "commands": [{
-        "command": "workbench.view.explorer"
-      }]
+      "commands": [
+        {
+          "command": "workbench.view.explorer"
+        }
+      ]
     },
     // save file
     {
       "before": ["<leader>", "f", "s"],
-      "commands": [{
-        "command": "workbench.action.files.save"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.files.save"
+        }
+      ]
     },
     // save file
     {
       "before": ["<leader>", "f", "S"],
-      "commands": [{
-        "command": "workbench.action.files.saveAll"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.files.saveAll"
+        }
+      ]
     },
     // beautify files
     {
       "before": ["<leader>", "="],
-      "commands": [{
-        "command": "HookyQR.beautifyFile"
-      }]
+      "commands": [
+        {
+          "command": "HookyQR.beautifyFile"
+        }
+      ]
     },
     // navigation
     {
       "before": ["leader", "w", "l"],
-      "commands": [{
-        "command": "extension.vim_navigateRight",
-        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "extension.vim_navigateRight",
+          "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["leader", "w", "h"],
-      "commands": [{
-        "command": "extension.vim_navigateLeft",
-        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "extension.vim_navigateLeft",
+          "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["leader", "w", "j"],
-      "commands": [{
-        "command": "extension.vim_navigateDown",
-        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "extension.vim_navigateDown",
+          "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["leader", "w", "k"],
-      "commands": [{
-        "command": "extension.vim_navigateUp",
-        "when": "vim.active && vim.use<C-w> && !editorTextFocus"
-      }]
+      "commands": [
+        {
+          "command": "extension.vim_navigateUp",
+          "when": "vim.active && vim.use<C-w> && !editorTextFocus"
+        }
+      ]
     },
     {
       "before": ["leader", "w", "v"],
-      "commands": [{
-        "command": "workbench.action.splitEditor",
-        "key": "cmd+\\"
-      }]
+      "commands": [
+        {
+          "command": "workbench.action.splitEditor",
+          "key": "cmd+\\"
+        }
+      ]
     }
   ],
   "vim.leader": "<space>"
