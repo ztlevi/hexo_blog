@@ -11,6 +11,8 @@ These days, I was working on a React Native project. In the meanwhile, I found i
 
 Fortunately, there are so many people love Emacs and contribute to it. Thanks for Chen bin's great [post](http://blog.binchen.org/posts/why-emacs-is-better-editor-part-two.html). I just put down more imenu generic expressions for modern Javascript like React, Vue. This helps me navigate and go through projects.
 
+<!--more-->
+
 # Screenshot
 
 A quick look a the result is here.
@@ -18,6 +20,8 @@ A quick look a the result is here.
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fmy5k692izj31co1bwwpm.jpg)
 
 # Set up
+
+> Note: To get functions like `componentDidMount`, and exclude `if, for, while`, plain regexp in Emacs seems not working. At least I couldn't find an easy solution like `[^if|for|while]`. But since `imenu-generic-expression` takes functions as parameters, I created another function to wrap one generic expression. Finally it works but as you can see, it's not beautiful.
 
 ```emacs-lisp
 (defun my-js2-mode-hook ()
