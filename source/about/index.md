@@ -1,10 +1,12 @@
 ---
 title: About Me
-date: 
+date:
 ---
+
 ---
+
 Hello, my name is Ting Zhou.
 
-This page is under processing...
+I'm a newbie full-stack developer and an evil emacser.
 
 <img src="/img/faceQ.JPG" alt="faceQ" style="width: 200px; margin:auto;display: block;"/>
