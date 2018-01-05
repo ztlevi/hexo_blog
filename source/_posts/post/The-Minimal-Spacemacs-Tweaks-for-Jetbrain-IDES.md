@@ -23,72 +23,72 @@ Welcome to the heaven!!!
 
 ## Leader key
 
-Using `<space>` key as the leader is a very popular way of editing, navigation, and commanding. There is never an easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
+Using <kbd>space</kbd> key as the leader is a very popular way of editing, navigation, and commanding. There is never an easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
 
 ## Sticky key
 
-Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your left hand's two fingers on `Ctrl + Shift` key or `Command + Shift` key and press `p`. And note that it's a key chord combination when you actually press these keys.
+Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your left hand's two fingers on <kbd>Ctrl + Shift</kbd> key or <kbd>Command + Shift</kbd> key and press <kbd>p</kbd>. And note that it's a key chord combination when you actually press these keys.
 
-This looks so stupid when you compare it with just `Space Space` in Vim's normal or visual mode. And by saying `Space Space`, it's a sticky key binding which means you just type `<space>` key twice in sequence. And you can just set your hands as the default typing position shown in this picture.
+This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim's normal or visual mode. And by saying <kbd>Space Space</kbd>, it's a sticky key binding which means you just type <kbd>space</kbd> key twice in sequence. And you can just set your hands as the default typing position shown in this picture.
 
 <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fm3jb9l72jj30r80i6ae1.jpg" alt="" style="width:500px;margin:auto;display:block;"/>
 
 ## Prefix key
 
-Well, now you probably get the point of using `<space>` key. But there is more of it.
+Well, now you probably get the point of using <kbd>space</kbd> key. But there is more of it.
 
-Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like `<space> f` (file related commands). For example, `<space> f f` go to the explorer, `<space> f s` save file and `<space> f S` save all. In this case, you won't mess up with these keys because they have the same prefix `<space> f`.
+Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like <kbd>space f</kbd> (file related commands). For example, <kbd>space> f f</kbd> go to the explorer, <kbd>space> f s</kbd> save file and <kbd>space> f S</kbd> save all. In this case, you won't mess up with these keys because they have the same prefix <kbd>space> f</kbd>.
 
 # Keybindings
 
 For the normal and visual mode, They are pretty much the same. But they can do much more now in space way.
 
-The `<space> w m` and other window pop up combination is just beautiful.
+The <kbd>space w m</kbd> and other window pop up combination is just beautiful.
 
 The most used ones are in bold text.
 
-> Note: The leader key is `<space>`
+> Note: The leader key is <kbd>space</kbd>
 
-| Key                 | Description                                                                  |
-| ------------------- | ---------------------------------------------------------------------------- |
-| `<leader>` space    | **Go to Action**                                                             |
-| `<leader>` b b      | **Recent files** (You can still use `command+e` or `ctrl+e`)                 |
-| `<leader>` b i      | **Active structure tool window**                                             |
-| `<leader>` b p      | Fire structure pop up (similar to structure tool)                            |
-| `<leader>` b u      | Reopen Closed Tab                                                            |
-| `<leader>` f f      | Go to file                                                                   |
-| `<leader>` f t      | **Active file tree window**                                                  |
-| `<leader>` f d      | Dash Launcher (You have to install Dash first)                               |
-| `<leader>` f s      | save all files (I still use `command+s` or `ctrl+s`)                         |
-| `<leader>` d d      | **Debug**                                                                    |
-| `<leader>` d D      | Debug Class                                                                  |
-| `<leader>` t t      | **Toggle Line Breakpoint**                                                   |
-| `<leader>` r r      | **Run**                                                                      |
-| `<leader>` r R      | Run Class                                                                    |
-| `<leader>` s p      | **Search in project**                                                        |
-| `<leader>` r p      | **Replace in project**                                                       |
-| `<leader>` R        | reload `~/.ideavimrc`                                                        |
-| `<leader>` '        | Active terminal window                                                       |
-| `<leader>` ee       | show error description                                                       |
-| `<leader>` c c      | Go to Class                                                                  |
-| `<leader>` a l      | show the action list                                                         |
-| `<leader>` g s      | **Vsc quick list pop up**                                                    |
-| `<leader>` g S      | Active version control window                                                |
-| `<leader>` w [lhjk] | **navigate window**                                                          |
-| `<leader>` w v      | **split window vertically**                                                  |
-| `<leader>` w s      | split window horizontally                                                    |
-| `<leader>` w c      | close window                                                                 |
-| `<leader>` w m      | **hide all windows except the editor tabs** (You can invoke again to revert) |
-| C-o                 | Go back                                                                      |
-| C-i                 | Forward                                                                      |
-| g d                 | **Go to declaration**                                                        |
-| g h                 | Go to Documentation                                                          |
-| g s                 | Go to Symbol                                                                 |
-| , =                 | **beautify file**                                                            |
-| z c                 | **collapse region**                                                          |
-| z o                 | **expand region**                                                            |
-| z C                 | collapse all region                                                          |
-| z O                 | expand all region                                                            |
+| Key                        | Description                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------ |
+| <kbd>leader space</kbd>    | **Go to Action**                                                               |
+| <kbd>leader b b</kbd>      | **Recent files** (You can still use <kbd>command+e</kbd> or <kbd>ctrl+e</kbd>) |
+| <kbd>leader b i</kbd>      | **Active structure tool window**                                               |
+| <kbd>leader b p</kbd>      | Fire structure pop up (similar to structure tool)                              |
+| <kbd>leader b u</kbd>      | Reopen Closed Tab                                                              |
+| <kbd>leader f f</kbd>      | Go to file                                                                     |
+| <kbd>leader f t</kbd>      | **Active file tree window**                                                    |
+| <kbd>leader f d</kbd>      | Dash Launcher (You have to install Dash first)                                 |
+| <kbd>leader f s</kbd>      | save all files (I still use <kbd>command+s</kbd> or <kbd>ctrl+s</kbd>)         |
+| <kbd>leader d d</kbd>      | **Debug**                                                                      |
+| <kbd>leader d D</kbd>      | Debug Class                                                                    |
+| <kbd>leader t t</kbd>      | **Toggle Line Breakpoint**                                                     |
+| <kbd>leader r r</kbd>      | **Run**                                                                        |
+| <kbd>leader r R</kbd>      | Run Class                                                                      |
+| <kbd>leader s p</kbd>      | **Search in project**                                                          |
+| <kbd>leader r p</kbd>      | **Replace in project**                                                         |
+| <kbd>leader R</kbd>        | reload `~/.ideavimrc`                                                          |
+| <kbd>leader '</kbd>        | Active terminal window                                                         |
+| <kbd>leader e e</kbd>      | show error description                                                         |
+| <kbd>leader c c</kbd>      | Go to Class                                                                    |
+| <kbd>leader a l</kbd>      | show the action list                                                           |
+| <kbd>leader g s</kbd>      | **Vsc quick list pop up**                                                      |
+| <kbd>leader g S<kbd>/      | Active version control window                                                  |
+| <kbd>leader w [lhjk]</kbd> | **navigate window**                                                            |
+| <kbd>leader w v</kbd>      | **split window vertically**                                                    |
+| <kbd>leader w s</kbd>      | split window horizontally                                                      |
+| <kbd>leader w c</kbd>      | close window                                                                   |
+| <kbd>leader w m</kbd>      | **hide all windows except the editor tabs** (You can invoke again to revert)   |
+| <kbd>C-o</kbd>             | Go back                                                                        |
+| <kbd>C-i</kbd>             | Forward                                                                        |
+| <kbd>g d</kbd>             | **Go to declaration**                                                          |
+| <kbd>g h</kbd>             | Go to Documentation                                                            |
+| <kbd>g s</kbd>             | Go to Symbol                                                                   |
+| <kbd>, =</kbd>             | **beautify file**                                                              |
+| <kbd>z c</kbd>             | **collapse region**                                                            |
+| <kbd>z o</kbd>             | **expand region**                                                              |
+| <kbd>z C</kbd>             | collapse all region                                                            |
+| <kbd>z O</kbd>             | expand all region                                                              |
 
 # Install
 
@@ -97,7 +97,6 @@ The most used ones are in bold text.
 > In case you want to sync your settings across multiple machines, you should checkout the **Setting Repository** [here](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository).
 
 2. If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following script to `~/.ideavimrc`.
-
 
 ```
 " ============================================================================
@@ -122,13 +121,13 @@ cnoremap <C-e> <End>
 "}}}
 ```
 
-Note: You have to disable the `C-a`, `C-e` in Jetbrain IDE to have the visual mode working correctly.
+Note: You have to disable the <kbd>C-a</kbd>, <kbd>C-e</kbd> in Jetbrain IDE to have the visual mode working correctly.
 
 You can click the from here to find the action by key.
 
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fm6eh3f8mgj31hg0fk42l.jpg)
 
-3. To bind the actions under `<space>`, put the following script in the `~/.ideavimrc`.
+3. To bind the actions under <kbd>space</kbd>, put the following script in the `~/.ideavimrc`.
 
 The ugly `<Backspace><Backspace><Backspace><Backspace><Backspace>` is because when we enter the command mode from visual mode, we have `:'<,'>`. The extra chars need to be deleted before we invoke the actions.
 
@@ -245,7 +244,6 @@ vmap <leader>rp :<Backspace><Backspace><Backspace><Backspace><Backspace>action F
 
 4. The multi-cursor action does not work correctly as well as the extend region and shrink region. They mess up some visual selection in Vim and the original selection. That's the reason. But so far I cannot do anything. So I just put the script here in case they work later on.
 
-
 ```
 " select occurrence, they do not work when editing
 nmap mn :action SelectNextOccurrence<CR>
@@ -258,12 +256,11 @@ vmap ma :<Backspace><Backspace><Backspace><Backspace><Backspace>action SelectAll
 
 5. There are other options you might want to add.
 
-
 ```
 set gdefault
 set smartcase
-
-" Integrate with system clipboard
+e
+" Integrat with system clipboard
 set clipboard=unnamedplus,unnamed
 
 set surround
