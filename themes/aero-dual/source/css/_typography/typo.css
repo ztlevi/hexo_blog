@@ -179,7 +179,7 @@ mark {
 
 /* 代码片断 */
 pre, code, pre tt {
-  font-family: menlo, Courier, 'Courier New', monospace;
+  font-family: Ubuntu Mono, menlo, Courier, 'Courier New', monospace;
 }
 
 pre {
