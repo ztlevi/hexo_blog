@@ -14,7 +14,7 @@ In key bindings, M stands for Alt key (option key for mac), s for Command key, C
 <!--more-->
 
 | Key Bindings  | Description                                                                    |
-|---------------|--------------------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------------------ |
 | C-g           | Quit                                                                           |
 | **! !**       | evil shell command output to the current line                                  |
 | **C-o**       | Evil jump backward                                                             |
@@ -44,7 +44,7 @@ The following command profile the CPU.
     Profiler-report
 
 | Key Bindings  | Description                                                            |
-|---------------|------------------------------------------------------------------------|
+| ------------- | ---------------------------------------------------------------------- |
 | C-x C-e       | eval-last-sexp                                                         |
 | M-.           | pop last command execute                                               |
 | Diminish Undo | Show mode detail in the mode line, e.g. company-mode                   |
@@ -54,18 +54,18 @@ The following command profile the CPU.
 ### Python
 
 In python mode, keys are start with prefix key `C-c`.
-| Key Bindings | Description                  |
+| Key Bindings | Description |
 |--------------|------------------------------|
-| C-c C-p      | run python                   |
-| C-c C-c      | python shell send buffer     |
-| C-c C-l      | python shell send file       |
-| **C-c C-r**  | python shell send region     |
-| C-c C-z      | python shell switch to shell |
+| C-c C-p | run python |
+| C-c C-c | python shell send buffer |
+| C-c C-l | python shell send file |
+| **C-c C-r** | python shell send region |
+| C-c C-z | python shell switch to shell |
 
 ## Search
 
 | Key Bindings               | Description                                                                                                 |
-|----------------------------|-------------------------------------------------------------------------------------------------------------|
+| -------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **SPC o d** (M-s o)        | **Occur dwim** (see the occurrences in codes and <br>go through them by toggling them), use e to enter edit |
 | e                          | Go to edit mode (Under Occur mode)                                                                          |
 | C-c C-c                    | Exit edit mode (Under Occur mode)                                                                           |
@@ -78,19 +78,19 @@ In python mode, keys are start with prefix key `C-c`.
 
 ## Replace
 
-1.  Just use vim, `:%s/xxx/yyy/g(c)`
-2.  Mark a key word, then use C-r (evil-quick-replace). It will automatically generate the vim command.
-3.  Use Occur-dwim (SPC o d), then use iedit (SPC s e).
+1. Just use vim, `:%s/xxx/yyy/g(c)`
+2. Mark a key word, then use C-r (evil-quick-replace). It will automatically generate the vim command.
+3. Use Occur-dwim (SPC o d), then use iedit (SPC s e).
 
 | Key Bindings | Description          |
-|--------------|----------------------|
+| ------------ | -------------------- |
 | M-%          | query-replace        |
 | C-M-%        | query-replace-regexp |
 
 ## Toggle
 
 | Key Bindings | Description                 |
-|--------------|-----------------------------|
+| ------------ | --------------------------- |
 | Spc t n      | Toggle line number          |
 | Spc t r      | Toggle relative line number |
 | **SPC t g**  | toggle golden ration        |
@@ -100,7 +100,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## Bookmark Related Opeation
 
 | Key Bindings | Description                                  |
-|--------------|----------------------------------------------|
+| ------------ | -------------------------------------------- |
 | Spc h b      | Open bookmarks in helm window                |
 | C-d          | delete the selected bookmark                 |
 | C-e          | edit the selected bookmark                   |
@@ -111,7 +111,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## File Related Operation
 
 | SPC f       | File related operation                       |
-|-------------|----------------------------------------------|
+| ----------- | -------------------------------------------- |
 | SPC p f     | Open file with projectile or counsel-git     |
 | SPC f f     | Helm-find-file                               |
 | C-M-j       | Ivy immediate done                           |
@@ -136,7 +136,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## Buffer Related Operation
 
 | SPC b       | Buffer related operation   |
-|-------------|----------------------------|
+| ----------- | -------------------------- |
 | **SPC TAB** | Switch back and forth      |
 | SPC b .     | buffer micro state (hydra) |
 | SPC b b     | Switch buffers             |
@@ -157,7 +157,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## Layout Related Operation
 
 | SPC l     | Layout related operation     |
-|-----------|------------------------------|
+| --------- | ---------------------------- |
 | SPC o l l | load layout (ztlevi)         |
 | SPC o l s | save layout (ztlevi)         |
 | SPC l o   | Custom layout                |
@@ -170,7 +170,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## Window Related Operation
 
 | SPC w             | Window Related Operation            |
-|-------------------|-------------------------------------|
+| ----------------- | ----------------------------------- |
 | **SPC w .**       | Window micro state (cheat sheet)    |
 | SPC w -/s         | Split window below and focus        |
 | SPC w //v         | Split window right and focus        |
@@ -192,7 +192,7 @@ In python mode, keys are start with prefix key `C-c`.
 ## Project Related Operation
 
 | SPC p   | Project related operation               |
-|---------|-----------------------------------------|
+| ------- | --------------------------------------- |
 | SPC p f | Project files                           |
 | SPC p b | Buffer files                            |
 | SPC p p | Switch to a project                     |
@@ -201,27 +201,28 @@ In python mode, keys are start with prefix key `C-c`.
 
 ## Dired Related Operation
 
-| SPC f j | Dired Related Operation                                                                         |
-| j       | (dired) navigate down                                                                           |
-| k       | (dired) navigate up                                                                             |
-| h       | (dired) go up directory                                                                         |
-| l       | (dired) find file / enter directory                                                             |
-| **m**   | Mark files. Use it with `C` and `R`                                                             |
-| **u**   | Unmark files. Use it with `C` and `R`                                                           |
-| **t**   | Mark all files.                                                                                 |
-| **U**   | Unmark all files.                                                                               |
-| **C**   | When you will press C to copy, the other dir in the **split pane** will be default destination. |
-| **R**   | Same thing with `C`. `R` stands for rename but also does move                                   |
-| f       | Find file. Can be used to create file.                                                          |
-| +       | Create directory                                                                                |
-| o       | Open file in another window                                                                     |
-| d       | Mark as delete.                                                                                 |
-| x       | Take the punge.                                                                                 |
+| SPC f j | Dired Related Operation |
+|---------|-------------------------------------------------------------------------------------------------|
+| j | (dired) navigate down |
+| k | (dired) navigate up |
+| h | (dired) go up directory |
+| l | (dired) find file / enter directory |
+| **m** | Mark files. Use it with `C` and `R` |
+| **u** | Unmark files. Use it with `C` and `R` |
+| **t** | Mark all files. |
+| **U** | Unmark all files. |
+| **C** | When you will press C to copy, the other dir in the **split pane** will be default destination. |
+| **R** | Same thing with `C`. `R` stands for rename but also does move |
+| f | Find file. Can be used to create file. |
+| + | Create directory |
+| o | Open file in another window |
+| d | Mark as delete. |
+| x | Take the punge. |
 
 ## Ranger Related Operation
 
 | SPC a      | Ranger Related Operation                             |
-|------------|------------------------------------------------------|
+| ---------- | ---------------------------------------------------- |
 | C-c C-e    | Wdired-change-to-wdired-mode: write in ranger        |
 | C-c C-c    | Commit changes                                       |
 | C-c Esc    | Abort changes                                        |
@@ -258,14 +259,15 @@ In python mode, keys are start with prefix key `C-c`.
 ## Org mode
 
 | Key Bindings      | Description        |
-|-------------------|--------------------|
+| ----------------- | ------------------ |
 | SPC a o o (C-c a) | Org agenda         |
 | SPC m s (C-c C-s) | Schedule           |
 | SPC m d (C-c C-d) | Deadline           |
 | C-c C-e           | Org Export         |
 | C-c C-c           | Org evaluate block |
 
-- Org evaluate block example:
+* Org evaluate block example:
+
 ```org
 #+BEGIN_SRC python :results output
 for i in range(10):
@@ -273,11 +275,25 @@ for i in range(10):
 #+END_SRC
 ```
 
+### Cycling
+
+1. Tab: toggle current headline
+2. S-Tab: globally toggle headlines
+
+### Headline movement
+
+| Key Bindings | Description                                                    |
+| ------------ | -------------------------------------------------------------- |
+| C-<return>   | Insert heading respect current content below                   |
+| M-<right>/l  | Demote heading, list item at point or move table column right. |
+| M-<left>/h   | Promote heading, list item at point or move table column left. |
+| M-<up>/k     | Move subtree or table row up                                   |
+| M-<down>/j   | Move subtree or table row down                                 |
 
 ## JS2 Mode
 
 | Key Bindings                                | Description                                                                               |
-|---------------------------------------------|-------------------------------------------------------------------------------------------|
+| ------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | **js2-refactor commands**                   | A lot more key bindings could be found [here](https://github.com/magnars/js2-refactor.el) |
 | , r &lt;                                    | js2r-forward-braf                                                                         |
 | , r &gt;                                    | js2r-forward-slurp                                                                        |
