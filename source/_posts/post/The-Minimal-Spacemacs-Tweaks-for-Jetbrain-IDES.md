@@ -92,11 +92,11 @@ The most used ones are in bold text.
 
 # Install
 
-1. Install ideaVim and create a `.ideavimrc` file in home directory, just like `~/.ideavimrc`.
+1.  Install ideaVim and create a `.ideavimrc` file in home directory, just like `~/.ideavimrc`.
 
 > In case you want to sync your settings across multiple machines, you should checkout the **Setting Repository** [here](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository).
 
-2. If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following script to `~/.ideavimrc`.
+2.  If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following script to `~/.ideavimrc`.
 
 ```
 " ============================================================================
@@ -127,7 +127,7 @@ You can click the from here to find the action by key.
 
 ![](https://ws1.sinaimg.cn/large/006tKfTcgy1fm6eh3f8mgj31hg0fk42l.jpg)
 
-3. To bind the actions under <kbd>space</kbd>, put the following script in the `~/.ideavimrc`.
+3.  To bind the actions under <kbd>space</kbd>, put the following script in the `~/.ideavimrc`.
 
 The ugly `<Backspace><Backspace><Backspace><Backspace><Backspace>` is because when we enter the command mode from visual mode, we have `:'<,'>`. The extra chars need to be deleted before we invoke the actions.
 
@@ -242,7 +242,7 @@ nmap <leader>rp :action ReplaceInPath<CR>
 vmap <leader>rp :<Backspace><Backspace><Backspace><Backspace><Backspace>action FindInPath<CR>
 ```
 
-4. The multi-cursor action does not work correctly as well as the extend region and shrink region. They mess up some visual selection in Vim and the original selection. That's the reason. But so far I cannot do anything. So I just put the script here in case they work later on.
+4.  The multi-cursor action does not work correctly as well as the extend region and shrink region. They mess up some visual selection in Vim and the original selection. That's the reason. But so far I cannot do anything. So I just put the script here in case they work later on.
 
 ```
 " select occurrence, they do not work when editing
@@ -254,12 +254,12 @@ vmap mp :<Backspace><Backspace><Backspace><Backspace><Backspace>action UnselectP
 vmap ma :<Backspace><Backspace><Backspace><Backspace><Backspace>action SelectAllOccurrences<CR>
 ```
 
-5. There are other options you might want to add.
+5.  There are other options you might want to add.
 
 ```
 set gdefault
 set smartcase
-e
+
 " Integrat with system clipboard
 set clipboard=unnamedplus,unnamed
 
