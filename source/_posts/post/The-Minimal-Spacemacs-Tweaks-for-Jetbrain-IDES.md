@@ -1,6 +1,6 @@
 ---
 title: Spacemacs/Space-Vim Config for Jetbrain IDEs
-date: 2017-12-05 01:45:50
+date: 2018-6-11 15:00:00
 categories: post
 tags: [spacemacs, space-vim, jetbrain, intellij idea, pycharm, webstorm]
 ---
@@ -47,48 +47,59 @@ The <kbd>space w m</kbd> and other window pop up combination is just beautiful.
 
 The most used ones are in bold text.
 
+<kbd><space> f t</kbd> is very helpful when you want to navigate to the file you're currently viewing in the project view.
+
 > Note: The leader key is <kbd>space</kbd>
 
-| Key                        | Description                                                                    |
-| -------------------------- | ------------------------------------------------------------------------------ |
-| <kbd>leader space</kbd>    | **Go to Action**                                                               |
-| <kbd>leader b b</kbd>      | **Recent files** (You can still use <kbd>command+e</kbd> or <kbd>ctrl+e</kbd>) |
-| <kbd>leader b i</kbd>      | **Active structure tool window**                                               |
-| <kbd>leader b p</kbd>      | Fire structure pop up (similar to structure tool)                              |
-| <kbd>leader b u</kbd>      | Reopen Closed Tab                                                              |
-| <kbd>leader f f</kbd>      | Go to file                                                                     |
-| <kbd>leader f t</kbd>      | **Active file tree window**                                                    |
-| <kbd>leader f d</kbd>      | Dash Launcher (You have to install Dash first)                                 |
-| <kbd>leader f s</kbd>      | save all files (I still use <kbd>command+s</kbd> or <kbd>ctrl+s</kbd>)         |
-| <kbd>leader d d</kbd>      | **Debug**                                                                      |
-| <kbd>leader d D</kbd>      | Debug Class                                                                    |
-| <kbd>leader t t</kbd>      | **Toggle Line Breakpoint**                                                     |
-| <kbd>leader r r</kbd>      | **Run**                                                                        |
-| <kbd>leader r R</kbd>      | Run Class                                                                      |
-| <kbd>leader s p</kbd>      | **Search in project**                                                          |
-| <kbd>leader r p</kbd>      | **Replace in project**                                                         |
-| <kbd>leader R</kbd>        | reload `~/.ideavimrc`                                                          |
-| <kbd>leader '</kbd>        | Active terminal window                                                         |
-| <kbd>leader e e</kbd>      | show error description                                                         |
-| <kbd>leader c c</kbd>      | Go to Class                                                                    |
-| <kbd>leader a l</kbd>      | show the action list                                                           |
-| <kbd>leader g s</kbd>      | **Vsc quick list pop up**                                                      |
-| <kbd>leader g S<kbd>/      | Active version control window                                                  |
-| <kbd>leader w [lhjk]</kbd> | **navigate window**                                                            |
-| <kbd>leader w v</kbd>      | **split window vertically**                                                    |
-| <kbd>leader w s</kbd>      | split window horizontally                                                      |
-| <kbd>leader w c</kbd>      | close window                                                                   |
-| <kbd>leader w m</kbd>      | **hide all windows except the editor tabs** (You can invoke again to revert)   |
-| <kbd>C-o</kbd>             | Go back                                                                        |
-| <kbd>C-i</kbd>             | Forward                                                                        |
-| <kbd>g d</kbd>             | **Go to declaration**                                                          |
-| <kbd>g h</kbd>             | Go to Documentation                                                            |
-| <kbd>g s</kbd>             | Go to Symbol                                                                   |
-| <kbd>, =</kbd>             | **beautify file**                                                              |
-| <kbd>z c</kbd>             | **collapse region**                                                            |
-| <kbd>z o</kbd>             | **expand region**                                                              |
-| <kbd>z C</kbd>             | collapse all region                                                            |
-| <kbd>z O</kbd>             | expand all region                                                              |
+| Key                                       | Description                                                                    |
+| ----------------------------------------- | ------------------------------------------------------------------------------ |
+| <kbd>C-i</kbd>                            | Forward                                                                        |
+| <kbd>C-o</kbd>                            | Go back                                                                        |
+| <kbd>g d</kbd>                            | **Go to declaration**                                                          |
+| <kbd>g h</kbd>                            | Go to Documentation                                                            |
+| <kbd>g r</kbd>                            | **Find Usages**                                                                |
+| <kbd>g s</kbd>                            | Go to Symbol                                                                   |
+| <kbd>leader '</kbd>                       | Active terminal window                                                         |
+| <kbd>leader R</kbd>                       | reload `~/.ideavimrc`                                                          |
+| <kbd>leader a a</kbd>                     | Select All                                                                     |
+| <kbd>leader a l</kbd>                     | Prompt action list                                                             |
+| <kbd>leader b b</kbd> (<kbd>\<CR\></kbd>) | **Recent files** (You can still use <kbd>command+e</kbd> or <kbd>ctrl+e</kbd>) |
+| <kbd>leader b i</kbd>                     | **Active structure tool window**                                               |
+| <kbd>leader b u</kbd>                     | Reopen Closed Tab                                                              |
+| <kbd>leader c c</kbd>                     | Go to Class                                                                    |
+| <kbd>leader d D</kbd>                     | Debug Class                                                                    |
+| <kbd>leader d d</kbd>                     | **Debug**                                                                      |
+| <kbd>leader e e</kbd>                     | show error description                                                         |
+| <kbd>leader f T</kbd>                     | **Select current file in project view**                                        |
+| <kbd>leader f b</kbd>                     | **Show Bookmarks**                                                             |
+| <kbd>leader f d</kbd>                     | Smart search launcher (You have to install Dash or Zeal first)                 |
+| <kbd>leader f f</kbd>                     | **Search Everywhere**                                                          |
+| <kbd>leader f s</kbd>                     | save all files (I still use <kbd>command+s</kbd> or <kbd>ctrl+s</kbd>)         |
+| <kbd>leader f t</kbd>                     | **Active file tree window**                                                    |
+| <kbd>leader i m</kbd>                     | Implement Methods                                                              |
+| <kbd>leader g S<kbd>/                     | Active version control window                                                  |
+| <kbd>leader g s</kbd>                     | **Vsc quick list pop up**                                                      |
+| <kbd>leader j i</kbd>                     | Fire structure pop up (similar to structure tool)                              |
+| <kbd>leader j j</kbd>                     | Ace Action                                                                     |
+| <kbd>leader j l</kbd>                     | Ace Line Action                                                                |
+| <kbd>leader m =</kbd>                     | **beautify file**                                                              |
+| <kbd>leader r R</kbd>                     | Run Class                                                                      |
+| <kbd>leader r p</kbd>                     | **Replace in project**                                                         |
+| <kbd>leader r r</kbd>                     | **Run**                                                                        |
+| <kbd>leader s p</kbd>                     | **Search in project**                                                          |
+| <kbd>leader space</kbd>                   | **Go to Action**                                                               |
+| <kbd>leader t b</kbd>                     | Toggle Bookmark                                                                |
+| <kbd>leader t t</kbd>                     | **Toggle Line Breakpoint**                                                     |
+| <kbd>leader w [lhjk]</kbd>                | **navigate window**                                                            |
+| <kbd>leader w c</kbd>                     | close window                                                                   |
+| <kbd>leader w m</kbd>                     | **hide all windows except the editor tabs** (You can invoke again to revert)   |
+| <kbd>leader w s</kbd>                     | split window horizontally                                                      |
+| <kbd>leader w v</kbd>                     | **split window vertically**                                                    |
+| <kbd>leader w z</kbd>                     | Toggle Zen mode                                                                |
+| <kbd>z C</kbd>                            | collapse all region                                                            |
+| <kbd>z O</kbd>                            | expand all region                                                              |
+| <kbd>z c</kbd>                            | **collapse region**                                                            |
+| <kbd>z o</kbd>                            | **expand region**                                                              |
 
 # Install
 
@@ -146,6 +157,7 @@ nmap <leader>wv <c-w>v
 nmap <leader>ws <c-w>s
 nmap <leader>wc <c-w>c
 nmap <leader>wm :action HideAllWindows<CR>
+nmap <leader>wz :action ToggleDistractionFreeMode<CR>
 
 vmap <leader>wh <c-w>h
 vmap <leader>wl <c-w>l
@@ -155,6 +167,7 @@ vmap <leader>wv <c-w>v
 vmap <leader>ws <c-w>s
 vmap <leader>wc <c-w>c
 vmap <leader>wm :<Backspace><Backspace><Backspace><Backspace><Backspace>action HideAllWindows<CR>
+vmap <leader>wz :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleDistractionFreeMode<CR>
 
 " ============================================================================
 " expand and collapse
@@ -168,56 +181,77 @@ nmap zC :action CollapseAllRegions<CR>
 " IDE actions
 " ============================================================================
 
+nmap <CR>            :action RecentFiles<CR>
+nmap <c-i>           :action Forward<CR>
+nmap <c-o>           :action Back<CR>
+nmap <leader>'       :action ActivateTerminalToolWindow<CR>
 nmap <leader><Space> :action GotoAction<CR>
-nmap <leader>cc      :action GotoClass<CR>
-nmap <leader>ff      :action GotoFile<CR>
-nmap <leader>ft      :action ActivateProjectToolWindow<CR>
-nmap <leader>fs      :action SaveAll<CR>
-nmap <leader>fd      :action DashLauncherAction<CR>
+nmap <leader><tab>   :action RecentFiles<CR>
+nmap <leader>aa      :action $SelectAll<CR>
+nmap <leader>al      :actionlist<CR>
 nmap <leader>bb      :action RecentFiles<CR>
 nmap <leader>bi      :action ActivateStructureToolWindow<CR>
-nmap <leader>bp      :action FileStructurePopup<cr>
 nmap <leader>bu      :action ReopenClosedTab<CR>
-nmap <leader>dd      :action Debug<CR>
+nmap <leader>cc      :action GotoClass<CR>
 nmap <leader>dD      :action DebugClass<CR>
-nmap <leader>tt      :action ToggleLineBreakpoint<CR>
-nmap <leader>rr      :action Run<CR>
-nmap <leader>rR      :action RunClass<CR>
+nmap <leader>dd      :action Debug<CR>
+nmap <leader>ee      :action ShowErrorDescription<CR>
+nmap <leader>fT      :action SelectInProjectView<CR>
+nmap <leader>fb      :action ShowBookmarks<CR>
+nmap <leader>fd      :action SmartSearchAction<CR>
+nmap <leader>ff      :action SearchEverywhere<CR>
+nmap <leader>fs      :action SaveAll<CR>
+nmap <leader>ft      :action ActivateProjectToolWindow<CR>
 nmap <leader>im      :action ImplementMethods<CR>
-nmap <leader>ee      :action ShowErrorDescription<cr>
-nmap <leader>'       :action ActivateTerminalToolWindow<CR>
-nmap gd              :action GotoDeclaration<cr>
+nmap <leader>ji      :action FileStructurePopup<CR>
+nmap <leader>jj      :action AceAction<CR>
+nmap <leader>jl      :action AceLineAction<CR>
+nmap <leader>m=      :action ReformatCode<CR>
+nmap <leader>rR      :action RunClass<CR>
+nmap <leader>rr      :action Run<CR>
+nmap <leader>tb      :action ToggleBookmark<CR>
+nmap <leader>tt      :action ToggleLineBreakpoint<CR>
+nmap gd              :action GotoDeclaration<CR>
 nmap gh              :action QuickJavaDoc<CR>
-nmap gs              :action GotoSymbol<cr>
-nmap ,=              :action ReformatCode<CR>
-nmap <c-o>           :action Back<cr>
-nmap <c-i>           :action Forward<cr>
+nmap gr              :action FindUsages<CR>
+nmap gs              :action GotoSymbol<CR>
 
-vmap <leader><Space> :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoAction<CR>
-vmap <leader>cc      :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoClass<CR>
-vmap <leader>ff      :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoFile<CR>
-vmap <leader>ft      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateProjectToolWindow<CR>
-vmap <leader>fs      :<Backspace><Backspace><Backspace><Backspace><Backspace>actio SaveAll<CR>
-vmap <leader>fd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DashLauncherAction<CR>
-vmap <leader>bb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RecentFiles<CR>
-vmap <leader>bu      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReopenClosedTab<CR>
-vmap <leader>bi      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateStructureToolWindow<CR>
-vmap <leader>bp      :<Backspace><Backspace><Backspace><Backspace><Backspace>action FileStructurePopup<cr>
-vmap <leader>dd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Debug<CR>
-vmap <leader>dD      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DebugClass<CR>
-vmap <leader>tt      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleLineBreakpoint<CR>
-vmap <leader>rr      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Run<CR>
-vmap <leader>rR      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RunClass<CR>
-vmap <leader>im      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ImplementMethods<CR>
-vmap <leader>ee      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ShowErrorDescription<cr>
+vmap <CR>            :<Backspace><Backspace><Backspace><Backspace><Backspace>action RecentFiles<CR>
+vmap <c-i>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Forward<CR>
+vmap <c-o>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Back<CR>
 vmap <leader>'       :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateTerminalToolWindow<CR>
-vmap ,=              :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReformatCode<CR>
-vmap <c-o>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Back<cr>
-vmap <c-i>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Forward<cr>
+vmap <leader><Space> :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoAction<CR>
+vmap <leader><tab>   :<Backspace><Backspace><Backspace><Backspace><Backspace>action RecentFiles<CR>
+vmap <leader>aa      :<Backspace><Backspace><Backspace><Backspace><Backspace>action $SelectAll<CR>
+vmap <leader>al      :<Backspace><Backspace><Backspace><Backspace><Backspace>actionlist<CR>
+vmap <leader>bb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RecentFiles<CR>
+vmap <leader>bi      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ActivateStructureToolWindow<CR>
+vmap <leader>bu      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReopenClosedTab<CR>
+vmap <leader>cc      :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoClass<CR>
+vmap <leader>dD      :<Backspace><Backspace><Backspace><Backspace><Backspace>action DebugClass<CR>
+vmap <leader>dd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Debug<CR>
+vmap <leader>ee      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ShowErrorDescription<CR>
+vmap <leader>fT      :<Backspace><Backspace><Backspace><Backspace><Backspace>action SelectInProjectView<CR>
+vmap <leader>fb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ShowBookmarks<CR>
+vmap <leader>fd      :<Backspace><Backspace><Backspace><Backspace><Backspace>action SmartSearchAction<CR>
+vmap <leader>ff      :<Backspace><Backspace><Backspace><Backspace><Backspace>action SearchEverywhere<CR>
+vmap <leader>fs      :<Backspace><Backspace><Backspace><Backspace><Backspace>action SaveAll<CR>
+vmap <leader>ft      :<Backspace><Backspace><Backspace><Backspace><Backspace>:action ActivateProjectToolWindow<CR>
+vmap <leader>im      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ImplementMethods<CR>
+vmap <leader>ji      :<Backspace><Backspace><Backspace><Backspace><Backspace>action FileStructurePopup<CR>
+vmap <leader>m=      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReformatCode<CR>
+vmap <leader>rR      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RunClass<CR>
+vmap <leader>rr      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Run<CR>
+vmap <leader>tb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleBookmark<CR>
+vmap <leader>tt      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleLineBreakpoint<CR>
+vmap gd              :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoDeclaration<CR>
+vmap gr              :<Backspace><Backspace><Backspace><Backspace><Backspace>action FindUsages<CR>
 
-" Enter the command-line mode
-nmap <CR> :
-vmap <CR> :
+" tab is used in karabiner as <C-i>, <C-d> as delete
+nmap <tab>           :action Forward<CR>
+nmap <delete>        <C-d>
+vmap <tab>           :<Backspace><Backspace><Backspace><Backspace><Backspace>action Forward<CR>
+vmap <delete>        <C-d>
 
 " Reload .ideavimrc
 nmap <leader>R :source ~/.ideavimrc<CR>
@@ -260,8 +294,16 @@ vmap ma :<Backspace><Backspace><Backspace><Backspace><Backspace>action SelectAll
 set gdefault
 set smartcase
 
-" Integrat with system clipboard
+
+" use system clipboard
 set clipboard=unnamedplus,unnamed
 
 set surround
+
+" Allow backspace and cursor keys to cross line boundaries
+set whichwrap+=<,>,h,l
+
+" black hole register
+vmap <backspace> "_d
+vmap <del> "_d
 ```
