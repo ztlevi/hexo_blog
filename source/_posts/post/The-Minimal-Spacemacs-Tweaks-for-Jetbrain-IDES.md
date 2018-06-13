@@ -86,6 +86,7 @@ The most used ones are in bold text.
 | <kbd>leader r R</kbd>                     | Run Class                                                                      |
 | <kbd>leader r p</kbd>                     | **Replace in project**                                                         |
 | <kbd>leader r r</kbd>                     | **Run**                                                                        |
+| <kbd>leader s s</kbd>                     | **Stop**                                                                       |
 | <kbd>leader s p</kbd>                     | **Search in project**                                                          |
 | <kbd>leader space</kbd>                   | **Go to Action**                                                               |
 | <kbd>leader t b</kbd>                     | Toggle Bookmark                                                                |
@@ -209,6 +210,7 @@ nmap <leader>jl      :action AceLineAction<CR>
 nmap <leader>m=      :action ReformatCode<CR>
 nmap <leader>rR      :action RunClass<CR>
 nmap <leader>rr      :action Run<CR>
+nmap <leader>ss      :action Stop<CR>
 nmap <leader>tb      :action ToggleBookmark<CR>
 nmap <leader>tt      :action ToggleLineBreakpoint<CR>
 nmap gd              :action GotoDeclaration<CR>
@@ -242,6 +244,7 @@ vmap <leader>ji      :<Backspace><Backspace><Backspace><Backspace><Backspace>act
 vmap <leader>m=      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ReformatCode<CR>
 vmap <leader>rR      :<Backspace><Backspace><Backspace><Backspace><Backspace>action RunClass<CR>
 vmap <leader>rr      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Run<CR>
+vmap <leader>ss      :<Backspace><Backspace><Backspace><Backspace><Backspace>action Stop<CR>
 vmap <leader>tb      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleBookmark<CR>
 vmap <leader>tt      :<Backspace><Backspace><Backspace><Backspace><Backspace>action ToggleLineBreakpoint<CR>
 vmap gd              :<Backspace><Backspace><Backspace><Backspace><Backspace>action GotoDeclaration<CR>
