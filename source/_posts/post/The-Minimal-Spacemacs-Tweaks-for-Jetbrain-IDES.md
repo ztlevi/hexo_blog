@@ -17,7 +17,7 @@ Welcome to the heaven!!!
 
 <!--more-->
 
-> I am just quoting myself here
+> If you're too lazy to read the whole stuff, grab my [.ideavimrc](https://github.com/ztlevi/Dotfiles/blob/master/ideavimrc) on Github
 
 # The space way
 
