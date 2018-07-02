@@ -9,7 +9,7 @@ Emacs "stucks" at editing long line files. It does but that's not Emacs's fault.
 
 ## Check Minified files
 
-So here is a simple trick, I just check the first line of the opened file. If first line is over 500 in width, then it just enable `fundamental-mode` which works perfectly for these files.
+So here is a simple trick, I just check the first 30 line of the opened file. If first line is over 1000 in width, then it just enable `fundamental-mode` which works perfectly for these files.
 
 ```emacs-lisp
 ;; if the first line is too long, enable fundamental by default
@@ -20,12 +20,16 @@ So here is a simple trick, I just check the first line of the opened file. If fi
     (if (zerop (forward-line (1- n)))
         (- (line-end-position)
            (line-beginning-position)))))
-(defun check-if-first-line-too-long ()
-  (> (get-nth-line-length 1) 500))
+(defun spacemacs/check-minified-file ()
+  (and
+   (not (member (file-name-extension (buffer-file-name))
+                '("org" "md" "markdown" "txt" "rtf")))
+   (cl-loop for i from 1 to 30
+            if (> (spacemacs/get-nth-line-length i) 1000)
+            return t
+            finally return nil)))
 (add-to-list 'magic-mode-alist (cons #'check-if-first-line-too-long 'fundamental-mode))
 ```
-
-<!--more-->
 
 ## Check Large File
 
