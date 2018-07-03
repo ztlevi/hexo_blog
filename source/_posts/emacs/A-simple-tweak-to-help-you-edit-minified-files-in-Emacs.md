@@ -25,6 +25,8 @@ So here is a simple trick, I just check the first line of the opened file. If fi
 (add-to-list 'magic-mode-alist (cons #'check-if-first-line-too-long 'fundamental-mode))
 ```
 
+<!--more-->
+
 ## Check Large File
 
 This piece of code is from spacemacs, we have to set a couple variables. But you could have your own version.
