@@ -201,6 +201,36 @@ As for the normal and visual mode, They are pretty much the same. But they can d
       ]
     },
     {
+      "before": ["<leader>", "t", "t"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.debug.action.toggleBreakpoint",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "d", "d"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.debug.start",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["<leader>", "r", "r"],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.debug.run",
+          "args": []
+        }
+      ]
+    },
+    {
       "before": ["<leader>", "b", "b"],
       "after": [],
       "commands": [
