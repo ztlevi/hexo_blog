@@ -20,10 +20,6 @@ Here is the code:
 
 ```emacs-lisp
 (with-eval-after-load 'flycheck
-  ;; disable mode-enabled for flycheck due to performance issue
-  (setq flycheck-check-syntax-automatically '(save idle-change)
-        flycheck-idle-change-delay 3)
-
   (flycheck-define-checker cspell
     "Cspell checker supports camel case checking"
     :command ("cspell"
@@ -37,11 +33,7 @@ Here is the code:
   (add-to-list 'flycheck-checkers 'cspell))
 ```
 
-I disable the `mode-enabled` in `flycheck-check-syntax-automatically` due to the performance issue.
-The problem is every time I enable `evil-normal-mode`, it will check the buffer as well. It should
-only check when `flychek-mode` is enabled. And it feels lagging and I couldn't find a hack for this.
-
-So the temporarily solution is disable `mode-enabled` and set `flycheck-idle-change-delay` to 3s. In
-this case, spelling check should work without much lag.
+> **Note**: If you feel lagging, you can set `flycheck-idle-change-delay` to 3s or remove
+> `idle-change` from `flycheck-check-syntax-automatically`.
 
 Furthurmore, you can customize it with [cspell.json](https://github.com/Jason3S/cspell#cspelljson)
