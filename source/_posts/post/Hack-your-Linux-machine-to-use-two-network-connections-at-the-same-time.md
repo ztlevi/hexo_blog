@@ -46,5 +46,7 @@ case, it's the intranet router's IP address `10.193.35.1`.
 sudo ip route add 10.213.37.0/24 via 10.193.35.1 dev enp6s0
 ```
 
+> Note: `/24` is the subnet mask = 255.255.255.0
+
 That's all for the tutorial. You might need to adapt this tutorial in your own scenario. But all the
 tools are on the table, feel free to hack it by yourself.
