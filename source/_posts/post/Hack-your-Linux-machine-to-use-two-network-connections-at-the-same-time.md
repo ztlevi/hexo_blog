@@ -15,6 +15,8 @@ It's basicly just hacking your IP kernel, adding rules for your intranet. Now le
 Your probably need to install the `net-tools` before getting started. In ubuntu, you can use
 `sudo apt install net-tools`.
 
+<!--more-->
+
 First, keep in mind, you will only need to have a default IP rule. Check your IP routes by
 `ip route list`, or `route -n`.
 
