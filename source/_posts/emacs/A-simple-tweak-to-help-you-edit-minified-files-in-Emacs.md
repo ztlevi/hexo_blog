@@ -24,11 +24,12 @@ So here is a simple trick, I just check the first 30 line of the opened file. If
     (if (zerop (forward-line (1- n)))
         (- (line-end-position)
            (line-beginning-position)))))
+
 (defun +my/check-minified-file ()
   (and
    (not (member (file-name-extension (buffer-file-name))
                 '("org" "md" "markdown" "txt" "rtf")))
-   (cl-loop for i from 1 to 30
+   (cl-loop for i from 1 to (min 30 (count-lines (point-min) (point-max)))
             if (> (get-nth-line-length i) 1000)
             return t
             finally return nil)))
