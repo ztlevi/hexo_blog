@@ -50,5 +50,14 @@ sudo ip route add 10.213.37.0/24 via 10.193.35.1 dev enp6s0
 
 > Note: `/24` is the subnet mask = 255.255.255.0
 
+Finally, if you use a domain rather than ip as default, you need to add the entry to `/etc/hosts` to
+help the PC resolve the IP when it cannot reach the proper DNS server.
+
+For example:
+
+```
+172.217.195.106 www.google.com
+```
+
 That's all for the tutorial. You might need to adapt this tutorial in your own scenario. But all the
 tools are on the table, feel free to hack it by yourself.
