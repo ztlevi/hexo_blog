@@ -54,7 +54,6 @@ The return value is the new value of LIST-VAR."
 
       ;; convert abs path to relative path (HOME)
       (dolist (repo magit-abs-repos)
-        (setq repo (concat repo "/"))
         (string-match home repo)
         (push (replace-match "~" nil nil repo 0) magit-repos))
       (setq projectile-known-projects magit-repos)))
