@@ -1,7 +1,7 @@
 ---
 title: FZF all your projects in terminal
 date: 2019-02-25 15:49:08
-categories:
+categories: coding
 tags: terminal
 ---
 

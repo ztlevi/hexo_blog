@@ -1,7 +1,7 @@
 ---
 title: Automatically scan your magit repos
 date: 2019-02-25 15:48:34
-categories:
+categories: coding
 tags: git
 ---
 
