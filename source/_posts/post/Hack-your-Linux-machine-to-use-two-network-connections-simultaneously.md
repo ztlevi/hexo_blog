@@ -1,5 +1,5 @@
 ---
-title: Hack your Linux machine to use two network connections at the same time
+title: Hack your Linux machine to use two network connections simultaneously
 date: 2019-01-10 11:46:54
 categories: coding
 tags: IP-kernel
