@@ -4,7 +4,7 @@ menu:
   Archives: /archives
   # change github and email values to your own addresses
   Github: https://github.com/ztlevi
-  Leetcode: https://ztlevi.github.io/leetcode
+  ML_Questions: https://ztlevi.github.io/Gitbook_Machine_Learning_Questions/
   About: /about
   扯淡: /categories/nonsense
 rss: /atom.xml
