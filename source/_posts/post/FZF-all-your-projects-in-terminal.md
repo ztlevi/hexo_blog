@@ -1,8 +1,12 @@
 ---
 title: FZF all your projects in terminal
 date: 2019-02-25 15:49:08
-categories: coding
-tags: terminal
+categories:
+  - coding
+tags:
+  - terminal
+cover: https://cdn-media-1.freecodecamp.org/images/1*TnsFDs-DEye722CrQXjv8w.png
+preview: 300
 ---
 
 How you navigate to your projects in terminal? `cd`? `ranger`? `nnn`? t a Well, these are not

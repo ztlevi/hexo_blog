@@ -39,11 +39,21 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ""
+  per_page: 10
+  order_by: -date
+
 highlight:
-  enable: true
-  line_number: false
-  auto_detect: false
-  tab_replace:
+  enable: false
+  line_number: true
+  auto_detect: true
+  tab_replace: 4
 
 # Category & Tag
 default_category: uncategorized
@@ -66,7 +76,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 plugins: hexo-generate-feed
-theme: aero-dual
+theme: obsidian
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -87,7 +97,7 @@ markdown:
     breaks: false
     linkify: true
     typographer: true
-    quotes: '“”‘’'
+    quotes: "“”‘’"
   plugins:
     - markdown-it-abbr
     - markdown-it-footnote
@@ -96,14 +106,15 @@ markdown:
     - markdown-it-sup
   anchors:
     level: 1
-    collisionSuffix: 'v'
+    collisionSuffix: "v"
     permalink: true
     permalinkClass: header-anchor
-    permalinkSymbol: ' > '
+    permalinkSymbol: " > "
 
 search:
   path: search.xml
   field: post
+  content: true
 
 # Sitemap Setting
 sitemap:
