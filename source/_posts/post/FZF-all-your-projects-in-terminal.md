@@ -50,7 +50,6 @@ function fzf_projects() {
   done
 
   local IFS=$'\n'
-  echo "${projects[@]}"
   selected_project=$(echo "${projects[*]}" | fzf)
   cd ${selected_project}
 }
