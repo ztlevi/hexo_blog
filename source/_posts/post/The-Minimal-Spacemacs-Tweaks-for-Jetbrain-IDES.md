@@ -7,9 +7,14 @@ tags: [spacemacs, space-vim, jetbrain, intellij idea, pycharm, webstorm]
 
 # Another Spacemacs configuration for Jetbrain IDEs
 
-Recently, I'm working on a React Native project. I have tried using Emacs to do the coding, but I cannot really pick up the whole new stuff without a fancy auto-completion or finding definitions since the syntax of React is so different and special. That's why I pick up Webstorm as a workaround. And there, I find a way to build my Jetbrain IDEs just like Spacemacs.
+Recently, I'm working on a React Native project. I have tried using Emacs to do the coding, but I cannot really pick up
+the whole new stuff without a fancy auto-completion or finding definitions since the syntax of React is so different and
+special. That's why I pick up Webstorm as a workaround. And there, I find a way to build my Jetbrain IDEs just like
+Spacemacs.
 
-Like I said in my previous post, space way is good for Vim users and only Vim can do this because it has other modes other than just insert mode. In this case, key bindings will never be a problem. We are using the sticky key sequences and prefix key for memorization.
+Like I said in my previous post, space way is good for Vim users and only Vim can do this because it has other modes
+other than just insert mode. In this case, key bindings will never be a problem. We are using the sticky key sequences
+and prefix key for memorization.
 
 Welcome to the heaven!!!
 
@@ -17,19 +22,25 @@ Welcome to the heaven!!!
 
 <!--more-->
 
-> If you're too lazy to read the whole stuff, grab my [.ideavimrc](https://github.com/ztlevi/Dotfiles/blob/master/ideavimrc) on Github
+> If you're too lazy to read the whole stuff, grab my
+> [.ideavimrc](https://github.com/ztlevi/Dotfiles/blob/master/ideavimrc) on Github
 
 # The space way
 
 ## Leader key
 
-Using <kbd>space</kbd> key as the leader is a very popular way of editing, navigation, and commanding. There is never an easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
+Using <kbd>space</kbd> key as the leader is a very popular way of editing, navigation, and commanding. There is never an
+easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
 
 ## Sticky key
 
-Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your left hand's two fingers on <kbd>Ctrl + Shift</kbd> key or <kbd>Command + Shift</kbd> key and press <kbd>p</kbd>. And note that it's a key chord combination when you actually press these keys.
+Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your
+left hand's two fingers on <kbd>Ctrl + Shift</kbd> key or <kbd>Command + Shift</kbd> key and press <kbd>p</kbd>. And
+note that it's a key chord combination when you actually press these keys.
 
-This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim's normal or visual mode. And by saying <kbd>Space Space</kbd>, it's a sticky key binding which means you just type <kbd>space</kbd> key twice in sequence. And you can just set your hands as the default typing position shown in this picture.
+This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim's normal or visual mode. And by saying
+<kbd>Space Space</kbd>, it's a sticky key binding which means you just type <kbd>space</kbd> key twice in sequence. And
+you can just set your hands as the default typing position shown in this picture.
 
 <img src="https://ws2.sinaimg.cn/large/006tNc79gy1fm3jb9l72jj30r80i6ae1.jpg" alt="" style="width:500px;margin:auto;display:block;"/>
 
@@ -37,7 +48,10 @@ This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim
 
 Well, now you probably get the point of using <kbd>space</kbd> key. But there is more of it.
 
-Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like <kbd>space f</kbd> (file related commands). For example, <kbd>space> f f</kbd> go to the explorer, <kbd>space> f s</kbd> save file and <kbd>space> f S</kbd> save all. In this case, you won't mess up with these keys because they have the same prefix <kbd>space> f</kbd>.
+Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like <kbd>space f</kbd>
+(file related commands). For example, <kbd>space> f f</kbd> go to the explorer, <kbd>space> f s</kbd> save file and
+<kbd>space> f S</kbd> save all. In this case, you won't mess up with these keys because they have the same prefix
+<kbd>space> f</kbd>.
 
 # Keybindings
 
@@ -47,7 +61,8 @@ The <kbd>space w m</kbd> and other window pop up combination is just beautiful.
 
 The most used ones are in bold text.
 
-<kbd><space> f t</kbd> is very helpful when you want to navigate to the file you're currently viewing in the project view.
+<kbd><space> f t</kbd> is very helpful when you want to navigate to the file you're currently viewing in the project
+view.
 
 > Note: The leader key is <kbd>space</kbd>
 
@@ -106,9 +121,11 @@ The most used ones are in bold text.
 
 1.  Install ideaVim and create a `.ideavimrc` file in home directory, just like `~/.ideavimrc`.
 
-> In case you want to sync your settings across multiple machines, you should checkout the **Setting Repository** [here](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository).
+> In case you want to sync your settings across multiple machines, you should checkout the **Setting Repository**
+> [here](https://www.jetbrains.com/help/idea/sharing-your-ide-settings.html#settings-repository).
 
-2.  If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following script to `~/.ideavimrc`.
+2.  If you want to use the Emacs key in Vim's insert mode, which is the hybrid mode in Spacemacs, copy the following
+    script to `~/.ideavimrc`.
 
 ```
 " ============================================================================
@@ -141,7 +158,8 @@ You can click the from here to find the action by key.
 
 3.  To bind the actions under <kbd>space</kbd>, put the following script in the `~/.ideavimrc`.
 
-The ugly `<Backspace><Backspace><Backspace><Backspace><Backspace>` is because when we enter the command mode from visual mode, we have `:'<,'>`. The extra chars need to be deleted before we invoke the actions.
+The ugly `<Backspace><Backspace><Backspace><Backspace><Backspace>` is because when we enter the command mode from visual
+mode, we have `:'<,'>`. The extra chars need to be deleted before we invoke the actions.
 
 ```
 let mapleader = " "
@@ -279,7 +297,9 @@ nmap <leader>rp :action ReplaceInPath<CR>
 vmap <leader>rp :<Backspace><Backspace><Backspace><Backspace><Backspace>action FindInPath<CR>
 ```
 
-4.  The multi-cursor action does not work correctly as well as the extend region and shrink region. They mess up some visual selection in Vim and the original selection. That's the reason. But so far I cannot do anything. So I just put the script here in case they work later on.
+4.  The multi-cursor action does not work correctly as well as the extend region and shrink region. They mess up some
+    visual selection in Vim and the original selection. That's the reason. But so far I cannot do anything. So I just
+    put the script here in case they work later on.
 
 ```
 " select occurrence, they do not work when editing

@@ -5,18 +5,16 @@ categories: coding
 tags: git
 ---
 
-`projectile` is amazing. It helps people to quickly switch between projects. Unfortunatelly, it
-cannot automatically scan the projects on your machine and load them when you first time fire
-projectile.
+`projectile` is amazing. It helps people to quickly switch between projects. Unfortunatelly, it cannot automatically
+scan the projects on your machine and load them when you first time fire projectile.
 
-Also, it doesn't really remove those invalid project entires for me. For example, there is a git
-projcet under `~/Developer/dummy-git` and I move this projcet to `~/Developer/new-git`. Both entires
-will exists every time I trigger `M-x counsel-projectile-switch-project` (or helm-projectile). It
-makes me confused sometimes.
+Also, it doesn't really remove those invalid project entires for me. For example, there is a git projcet under
+`~/Developer/dummy-git` and I move this projcet to `~/Developer/new-git`. Both entires will exists every time I trigger
+`M-x counsel-projectile-switch-project` (or helm-projectile). It makes me confused sometimes.
 
-Here is the solution. For me, basically I every project I created is by git. So I utilzed the
-`magit-list-repos-1` func in `magit`. For those of you use other source control tool or
-`.projectile` in your project, you might need to find the corresponding func or write your own.
+Here is the solution. For me, basically I every project I created is by git. So I utilzed the `magit-list-repos-1` func
+in `magit`. For those of you use other source control tool or `.projectile` in your project, you might need to find the
+corresponding func or write your own.
 
 <!--more-->
 
@@ -64,8 +62,8 @@ The return value is the new value of LIST-VAR."
   )
 ```
 
-Since loading `magit` takes me roughly 1.5 seconds on my machine and I don't really need to update
-projectile repos on booting Emacs, I hook the update func after `magit`. And I bind a key for
-`update-projectile-known-projects` to manually trigger it if needed.
+Since loading `magit` takes me roughly 1.5 seconds on my machine and I don't really need to update projectile repos on
+booting Emacs, I hook the update func after `magit`. And I bind a key for `update-projectile-known-projects` to manually
+trigger it if needed.
 
 Thats all for this post. I hope you enjoy it.

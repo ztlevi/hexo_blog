@@ -1,5 +1,5 @@
 ---
-title: 'Game theory: Solutions for others'
+title: "Game theory: Solutions for others"
 categories: coding
 tags: coding
 date: 2017-09-09 15:31:05
@@ -29,7 +29,7 @@ class Solution(object):
                 mem[s] = any(not search(s[:i] + '--' + s[i+2:]) for i in range(len(s)) if s[i:i+2] == '++')
             return mem[s]
         mem = {}
-        return search(s) 
+        return search(s)
 ```
 
 <!--more-->

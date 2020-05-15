@@ -53,14 +53,9 @@ The following command profile the CPU.
 
 ### Python
 
-In python mode, keys are start with prefix key `C-c`.
-| Key Bindings | Description |
-|--------------|------------------------------|
-| C-c C-p | run python |
-| C-c C-c | python shell send buffer |
-| C-c C-l | python shell send file |
-| **C-c C-r** | python shell send region |
-| C-c C-z | python shell switch to shell |
+In python mode, keys are start with prefix key `C-c`. | Key Bindings | Description |
+|--------------|------------------------------| | C-c C-p | run python | | C-c C-c | python shell send buffer | | C-c
+C-l | python shell send file | | **C-c C-r** | python shell send region | | C-c C-z | python shell switch to shell |
 
 ## Search
 
@@ -201,23 +196,23 @@ In python mode, keys are start with prefix key `C-c`.
 
 ## Dired Related Operation
 
-| SPC f j | Dired Related Operation |
-|---------|-------------------------------------------------------------------------------------------------|
-| j | (dired) navigate down |
-| k | (dired) navigate up |
-| h | (dired) go up directory |
-| l | (dired) find file / enter directory |
-| **m** | Mark files. Use it with `C` and `R` |
-| **u** | Unmark files. Use it with `C` and `R` |
-| **t** | Mark all files. |
-| **U** | Unmark all files. |
-| **C** | When you will press C to copy, the other dir in the **split pane** will be default destination. |
-| **R** | Same thing with `C`. `R` stands for rename but also does move |
-| f | Find file. Can be used to create file. |
-| + | Create directory |
-| o | Open file in another window |
-| d | Mark as delete. |
-| x | Take the punge. |
+| SPC f j | Dired Related Operation                                                                         |
+| ------- | ----------------------------------------------------------------------------------------------- |
+| j       | (dired) navigate down                                                                           |
+| k       | (dired) navigate up                                                                             |
+| h       | (dired) go up directory                                                                         |
+| l       | (dired) find file / enter directory                                                             |
+| **m**   | Mark files. Use it with `C` and `R`                                                             |
+| **u**   | Unmark files. Use it with `C` and `R`                                                           |
+| **t**   | Mark all files.                                                                                 |
+| **U**   | Unmark all files.                                                                               |
+| **C**   | When you will press C to copy, the other dir in the **split pane** will be default destination. |
+| **R**   | Same thing with `C`. `R` stands for rename but also does move                                   |
+| f       | Find file. Can be used to create file.                                                          |
+| +       | Create directory                                                                                |
+| o       | Open file in another window                                                                     |
+| d       | Mark as delete.                                                                                 |
+| x       | Take the punge.                                                                                 |
 
 ## Ranger Related Operation
 
@@ -266,7 +261,7 @@ In python mode, keys are start with prefix key `C-c`.
 | C-c C-e           | Org Export         |
 | C-c C-c           | Org evaluate block |
 
-* Org evaluate block example:
+- Org evaluate block example:
 
 ```org
 #+BEGIN_SRC python :results output

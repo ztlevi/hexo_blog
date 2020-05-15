@@ -117,8 +117,8 @@ After that, use git push/git push origin master
 
 `git clone remote_location //clone_directory`
 
-Remote location can be local or online location, such as http/ssh. If there is no clone_directory,
-then the default directory is the root directory.
+Remote location can be local or online location, such as http/ssh. If there is no clone_directory, then the default
+directory is the root directory.
 
 5. Create and merge branch
 

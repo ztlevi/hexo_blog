@@ -7,13 +7,13 @@ date: 2018-07-01 23:51:13
 
 Emacs "stucks" at editing long line files. It does but that's not Emacs's fault. Emacs has excellent
 [gap buffer](chrome-extension://gfbliohnnapiefjpjlpjnehglfpaknnc/pages/pdf_viewer.html?r=https://www.common-lisp.net/project/flexichain/download/StrandhVilleneuveMoore.pdf)
-for large file editing. It's due to the mode you apply to the file. These modes might freeze your
-Emacs when editing large file or minified files.
+for large file editing. It's due to the mode you apply to the file. These modes might freeze your Emacs when editing
+large file or minified files.
 
 ## Check Minified files
 
-So here is a simple trick, I just check the first 30 line of the opened file. If first line is over
-1000 in width, then it just enable `fundamental-mode` which works perfectly for these files.
+So here is a simple trick, I just check the first 30 line of the opened file. If first line is over 1000 in width, then
+it just enable `fundamental-mode` which works perfectly for these files.
 
 ```emacs-lisp
 ;; if the first line is too long, enable fundamental by default
@@ -41,8 +41,7 @@ So here is a simple trick, I just check the first 30 line of the opened file. If
 
 ## Check Large File
 
-This piece of code is from spacemacs, we have to set a couple variables. But you could have your own
-version.
+This piece of code is from spacemacs, we have to set a couple variables. But you could have your own version.
 
 ```emacs-lisp
 (setq spacemacs-large-file-modes-list '(archive-mode tar-mode jka-compr git-commit-mode image-mode

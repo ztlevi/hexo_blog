@@ -4,13 +4,13 @@ categories: emacs
 tags: emacs
 date: 2017-05-25 19:58:42
 ---
-Publish with Org2Blog and Solution to non-ascii when posting to Wordpress
-=========================================================================
 
-Install packages
-----------------
+# Publish with Org2Blog and Solution to non-ascii when posting to Wordpress
 
-Install [org2blog](https://github.com/punchagan/org2blog). I put the package in my own emacs configuration folder. Path to org2blog: **~/.spacemacs.d/layers/org2blog/**.
+## Install packages
+
+Install [org2blog](https://github.com/punchagan/org2blog). I put the package in my own emacs configuration folder. Path
+to org2blog: **~/.spacemacs.d/layers/org2blog/**.
 
 org2blog depends on
 
@@ -21,12 +21,13 @@ org2blog depends on
 
 To better manage the packages, I just put the two packages above right under the same path to my org2blog.
 
-Configuring Emacs
------------------
+## Configuring Emacs
 
-Put following code in your emacs configuration file, e.g. **~/.emacs.d/init.el**. Of course, change to your private infomation, including my-blog, url, username. You need to put /xmlrpc.php after your url. That's for XML-RPC server of your homepage. It only accepts POST request.
+Put following code in your emacs configuration file, e.g. **~/.emacs.d/init.el**. Of course, change to your private
+infomation, including my-blog, url, username. You need to put /xmlrpc.php after your url. That's for XML-RPC server of
+your homepage. It only accepts POST request.
 
-``` commonlisp
+```commonlisp
 ;; Load your own org2blog path by using load-path.
 (setq load-path (cons "~/.spacemacs.d/layers/org2blog/" load-path))
 (require 'org2blog-autoloads)
@@ -52,25 +53,24 @@ Your **~/.netrc** file looks like this. Change the username and your<sub>passwor
 
 wp-ztlevi is the auth<sub>id</sub> to find your private information from the **~/.netrc** file.
 
-Useage
-------
+## Useage
 
-1.  *M-x org2blog/wp-new-entry* : Create a new templete file.
-2.  *M-x org2blog/wp-login* : Login to your wordpress blog.
-3.  *M-x org2blog/wp-post-buffer* : Used to post your org file as draft.
-4.  *M-x org2blog/wp-post-buffer-and-publish* : Publish your org file right away.
+1.  _M-x org2blog/wp-new-entry_ : Create a new templete file.
+2.  _M-x org2blog/wp-login_ : Login to your wordpress blog.
+3.  _M-x org2blog/wp-post-buffer_ : Used to post your org file as draft.
+4.  _M-x org2blog/wp-post-buffer-and-publish_ : Publish your org file right away.
 
-Solution to non-ascii on Wordpress
-----------------------------------
+## Solution to non-ascii on Wordpress
 
-Since Wordpress does not support non-ascii when you post. We need to clear out the non-ascii characters before we post. Otherwise it will failed with a structure problem like this.
+Since Wordpress does not support non-ascii when you post. We need to clear out the non-ascii characters before we post.
+Otherwise it will failed with a structure problem like this.
 
 <img src="https://ww3.sinaimg.cn/large/006tNc79gy1fdltj04hs4j307z06cq35.jpg" alt="img" title="image title"/>
 So annoying when I first met this problem. I really had no ideas about this.
 
 /Users/ztlevi/Dropbox/Beautify/OldWallPaper/001.jpg
 
-``` xml
+```xml
 <param>
   <value>
     <boolean>0</boolean>
@@ -80,13 +80,13 @@ So annoying when I first met this problem. I really had no ideas about this.
 
 And Here is the **Solution**. Found in a Japanese blog :). <http://blog.somof.net/?p=1310>
 
-测试是否能上传到blog :)
+测试是否能上传到 blog :)
 
 I put some Chinese right here. Well, if you see the line above, that means it succeeds.
 
 Add the following codes to your emacs configuration and you are good to go.
 
-``` commonlisp
+```commonlisp
 (advice-add 'url-http-create-request :override
             'url-http-create-request-debug)
 (defun url-http-create-request-debug (&optional ref-url)
@@ -235,9 +235,10 @@ Add the following codes to your emacs configuration and you are good to go.
     request))
 ```
 
-BTW, you can add the function *occur-non-ascii* to your emacs configuration. It will pop lines with non-ascii characters in a buffer. Press **e** to edit.
+BTW, you can add the function _occur-non-ascii_ to your emacs configuration. It will pop lines with non-ascii characters
+in a buffer. Press **e** to edit.
 
-``` commonlisp
+```commonlisp
 ;; occur non ascii, used to check non-ascii in Wordpress
 (defun occur-non-ascii ()
   "Find any non-ascii characters in the current buffer."
@@ -254,9 +255,10 @@ BTW, you can add the function *occur-non-ascii* to your emacs configuration. It 
   (occur "[^[:ascii:]]"))
 ```
 
-If the highlight for the matches does not look so clear. Put the following line in your emacs custom setting for faces. Change the background and foreground color to whatever you want.
+If the highlight for the matches does not look so clear. Put the following line in your emacs custom setting for faces.
+Change the background and foreground color to whatever you want.
 
-``` commonlisp
+```commonlisp
 (custom-set-faces
  '(match ((t (:background "DeepSkyBlue1" :foreground "gray90" :weight bold))))
 )

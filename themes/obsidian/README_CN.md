@@ -1,14 +1,16 @@
 # Hexo-theme-obsidian
+
 v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 
-> 一款暗色的Hexo主题, 拥有响应式布局, 简约而优雅.
+> 一款暗色的 Hexo 主题, 拥有响应式布局, 简约而优雅.
 
 ![Latest Release Version](https://img.shields.io/github/v/release/TriDiamond/hexo-theme-obsidian)
 ![Latest Release Date](https://img.shields.io/github/release-date/TriDiamond/hexo-theme-obsidian)
 ![License](https://img.shields.io/github/license/TriDiamond/hexo-theme-obsidian)
 [![Join the chat at https://gitter.im/TriDiamond/hexo-theme-obsidian](https://badges.gitter.im/TriDiamond/hexo-theme-obsidian.svg)](https://gitter.im/TriDiamond/hexo-theme-obsidian?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**[预览](http://tridiamond.me)** | **[更变日志](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
+**[预览](http://tridiamond.me)** |
+**[更变日志](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG_CN.md)**
 
 🇺🇸 **[English Doc](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/README.md)** |
 **[ChangeLog](https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md)**
@@ -19,21 +21,26 @@ v1.x | ᴅᴇsɪɢɴᴇᴅ & ᴄᴏᴅᴇᴅ ʙʏ ᴛʀɪᴅɪᴀᴍᴏɴᴅ
 <summary>更多主题展示</summary>
 
 ## 分类页
+
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573148012/blog/A-Obsidian-categories_mgdti7.png)
 
 ## 多级分类
+
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573148016/blog/A-Obsidian-categories-level_xtxty9.png)
 
 ## 归档页
+
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573323148/blog/A-Obsidian-archives_ffpwf9.png)
 
 ## 文章页
+
 ![screenshot](https://res.cloudinary.com/tridiamond/image/upload/v1573148016/blog/A-Obsidian-articles_wlsu2v.png)
+
 </details>
 
 ## 安装
 
-``` bash
+```bash
 $ git clone https://github.com/TriDiamond/hexo-theme-obsidian.git obsidian
 ```
 
@@ -43,10 +50,10 @@ $ git clone https://github.com/TriDiamond/hexo-theme-obsidian.git obsidian
 
 打开 `Hexo` 配置文件 `_config.yml`, 设置主题为 `obsidian`
 
-``` yaml
-...
+```yaml
+
+---
 theme: obsidian
-...
 ```
 
 ### 主题配置
@@ -56,7 +63,7 @@ theme: obsidian
 <details>
 <summary>详细配置文件，点击展开</summary>
 
-``` yaml
+```yaml
 #! ---------------------------------------------------------------
 #! 版本`v1.3.5`开始代码高亮已经用`codemirror`替换了`highlight.js`，
 #! 但是Hexo默认的highlight配置还是需要关闭的。
@@ -133,11 +140,11 @@ mp3:
 # 查看 https://github.com/gitalk/gitalk
 gitalk:
   autoExpand: false
-  clientID: ''
-  clientSecret: ''
-  repo: ''
-  owner: ''
-  admin: ['']
+  clientID: ""
+  clientSecret: ""
+  repo: ""
+  owner: ""
+  admin: [""]
   # Ensure uniqueness and length less than 50
   id: location.pathname
   # Facebook-like distraction
@@ -150,8 +157,8 @@ valine:
   app_key:
   notify: false
   verify: false
-  avatar: 'mp'
-  placeholder: 'Leave your throughs behind~'
+  avatar: "mp"
+  placeholder: "Leave your throughs behind~"
   visitor: true
 
 # 文章字数和阅读时间统计插件
@@ -173,9 +180,9 @@ html_truncate:
   # 封面文章保留多少个字符
   coverLength: 100
   # 省略符号
-  ellipsis: '...'
+  ellipsis: "..."
   # 需要过滤的html标签
-  excludes: ['img']
+  excludes: ["img"]
   # 截取时保留空白空格字符
   keepWhitespaces: true
   # 截取到最后的时候保留完成的字（只对英文有用）
@@ -190,7 +197,7 @@ busuanzi:
 # see https://github.com/overtrue/share.js/
 sharejs:
   enable: true
-  disabled: 'facebook,douban,linkedin,diandian,tencent,google'
+  disabled: "facebook,douban,linkedin,diandian,tencent,google"
 
 # 使用了codemirror替换了highlight.js，代码高亮更加完善，也更接近IDE的高亮样式
 # 默认已经填入了一些语言的mode支持，如果你需要其他语言的支持，请查看codemirror官网的mode
@@ -198,12 +205,12 @@ sharejs:
 # codemirror官网： https://codemirror.net/
 # 默认支持了：JS, HTML, CSS, PHP, JAVA, C, C#, C++, SHELL, PYTHON.
 codemirror:
-  modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python']
+  modes: ["javascript", "css", "xml", "htmlmixed", "clike", "php", "shell", "python"]
 
 # 启用 mathjax 支持
 mathjax: true
-
 ```
+
 </details>
 
 ### 评论插件
@@ -215,27 +222,24 @@ mathjax: true
 
 ### 代码块样式
 
-> 版本`v1.3.5`开始代码高亮已经用`codemirror`替换了`highlight.js`，
->  但是Hexo默认的highlight配置还是需要关闭的。
->  ！！所以无比把Hexo默认的highlight配置改为`enable: flase` ！！
+> 版本`v1.3.5`开始代码高亮已经用`codemirror`替换了`highlight.js`， 但是 Hexo 默认的 highlight 配置还是需要关闭的。 ！！
+> 所以无比把 Hexo 默认的 highlight 配置改为`enable: flase` ！！
 
 在博客根目录的`_config.yml`修改
 
 > ⚠️ 注意不是主题里面的`_config.yml`，在主题里面加这个是无效的哦
 
 ```yaml
-...
 
+---
 highlight:
   enable: false
   line_number: true
   auto_detect: true
   tab_replace:
-
-...
 ```
 
-Codemirror代码高亮配置
+Codemirror 代码高亮配置
 
 ```yaml
 # 使用了codemirror替换了highlight.js，代码高亮更加完善，也更接近IDE的高亮样式
@@ -244,10 +248,10 @@ Codemirror代码高亮配置
 # codemirror官网： https://codemirror.net/
 # 默认支持了：JS, HTML, CSS, PHP, JAVA, C, C#, C++, SHELL, PYTHON.
 codemirror:
-  modes: ['javascript', 'css', 'xml', 'htmlmixed', 'clike', 'php', 'shell', 'python']
+  modes: ["javascript", "css", "xml", "htmlmixed", "clike", "php", "shell", "python"]
 ```
 
-修改了默认highlight配置后需要重新生成文件
+修改了默认 highlight 配置后需要重新生成文件
 
 ```bash
 hexo clean && hexo g
@@ -257,39 +261,18 @@ hexo clean && hexo g
 
 文章里面的参数`preview`控制在首页展示时保留的字符数
 
-``` markdown
-
-title: My awesome title
-date: 2019-07-14 18:38:45
-categories:
-    - Category1
-    - Category2
-tags:
-    - Tag1
-    - Tag2
-mp3: http://domain.com/awesome.mp3
-cover: http://domain.com/awesome.jpg
-preview: 300
-
+```markdown
+title: My awesome title date: 2019-07-14 18:38:45 categories: - Category1 - Category2 tags: - Tag1 - Tag2 mp3:
+http://domain.com/awesome.mp3 cover: http://domain.com/awesome.jpg preview: 300
 ```
 
 ### 文章模版
 
 文章模版设置
 
-``` markdown
-
-title: My awesome title
-date: 2019-07-14 18:38:45
-categories:
-    - 分类1
-    - 分类2
-tags:
-    - 标签1
-    - 标签2
-mp3: http://domain.com/awesome.mp3
-cover: http://domain.com/awesome.jpg
-
+```markdown
+title: My awesome title date: 2019-07-14 18:38:45 categories: - 分类 1 - 分类 2 tags: - 标签 1 - 标签 2 mp3:
+http://domain.com/awesome.mp3 cover: http://domain.com/awesome.jpg
 ```
 
 ### 创建分类页
@@ -330,7 +313,7 @@ type: "tags"
 
 ### MathJax 支持
 
-默认是启用MathJax支持的, 如果需要关闭改变主题配置为 `false`。
+默认是启用 MathJax 支持的, 如果需要关闭改变主题配置为 `false`。
 
 ```yaml
 # 启用 mathjax 支持
@@ -341,7 +324,7 @@ mathjax: true
 
 > 更新前请先备份主题里的 `_config.yml` 文件
 
-``` bash
+```bash
 cd themes/osidian
 git pull
 ```
@@ -350,13 +333,13 @@ git pull
 
 ### 安装说明
 
-NPM安装
+NPM 安装
 
 ```bash
 $ npm install hexo-generator-search --save
 ```
 
-在你的根目录配置 `_config.yml` 里面添加hexo-generator-search的配置
+在你的根目录配置 `_config.yml` 里面添加 hexo-generator-search 的配置
 
 ```yaml
 search:
@@ -373,14 +356,15 @@ hexo clean && hexo g
 
 ## 相关
 
-做了一个 [`Typro`](https://typora.io/) 主题 [`Obsidian`](https://github.com/TriDiamond/typro-theme-obsidian) 专门给写博客的你们.
+做了一个 [`Typro`](https://typora.io/) 主题 [`Obsidian`](https://github.com/TriDiamond/typro-theme-obsidian) 专门给写博
+客的你们.
 
 ## 反馈
 
-> 大家记得先看一下[ISSUE](https://github.com/TriDiamond/hexo-theme-obsidian/issues)里面有没有你的问题，已经解答了的。
-> 很有可能你的问题已经被问过了，或者可以在Issue里面就找到答案了！谢谢配合！
+> 大家记得先看一下[ISSUE](https://github.com/TriDiamond/hexo-theme-obsidian/issues)里面有没有你的问题，已经解答了的。很
+> 有可能你的问题已经被问过了，或者可以在 Issue 里面就找到答案了！谢谢配合！
 
 可以通过以下方式反馈问题：
 
 - [创建新 issue!](https://github.com/TriDiamond/hexo-theme-obsidian/issues/new)
-- 加入QQ群 `909955326`
+- 加入 QQ 群 `909955326`

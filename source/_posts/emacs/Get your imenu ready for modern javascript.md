@@ -1,15 +1,15 @@
-title: Get your imenu ready for modern Javascript
-date: 2017-12-29
-tags: [emacs, imenu]
-categories: emacs
+title: Get your imenu ready for modern Javascript date: 2017-12-29 tags: [emacs, imenu] categories: emacs
 
 ---
 
 # Introduction
 
-These days, I was working on a React Native project. In the meanwhile, I found it's kind of hard to catch up the modern syntax of Javascript, so as for imenu (a built in project structure menu bar in Emacs).
+These days, I was working on a React Native project. In the meanwhile, I found it's kind of hard to catch up the modern
+syntax of Javascript, so as for imenu (a built in project structure menu bar in Emacs).
 
-Fortunately, there are so many people love Emacs and contribute to it. Thanks for Chen bin's great [post](http://blog.binchen.org/posts/why-emacs-is-better-editor-part-two.html). I just put down more imenu generic expressions for modern Javascript like React, Vue. This helps me navigate and go through projects.
+Fortunately, there are so many people love Emacs and contribute to it. Thanks for Chen bin's great
+[post](http://blog.binchen.org/posts/why-emacs-is-better-editor-part-two.html). I just put down more imenu generic
+expressions for modern Javascript like React, Vue. This helps me navigate and go through projects.
 
 <!--more-->
 
@@ -21,7 +21,10 @@ A quick look a the result is here.
 
 # Set up
 
-> Note: To get functions like `componentDidMount`, and exclude `if, for, while`, plain regexp in Emacs seems not working. At least I couldn't find an easy solution like `[^if|for|while]`. But since `imenu-generic-expression` takes functions as parameters, I created another function to wrap one generic expression. Finally it works but as you can see, it's not beautiful.
+> Note: To get functions like `componentDidMount`, and exclude `if, for, while`, plain regexp in Emacs seems not
+> working. At least I couldn't find an easy solution like `[^if|for|while]`. But since `imenu-generic-expression` takes
+> functions as parameters, I created another function to wrap one generic expression. Finally it works but as you can
+> see, it's not beautiful.
 
 ```emacs-lisp
 (defun my-js2-mode-hook ()
