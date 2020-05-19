@@ -26,31 +26,25 @@ Second, put the following code in your shell configuration file.
 ```sh
 # Switch projects
 function fzf_projects() {
-  # Scan roots with depth 1
-  project_roots=("${HOME}" "${HOME}/Dropbox" "${HOME}/go/src")
+  # Each root is consist of PATH:scan_depth
+  project_scans=("${HOME}:1" "${HOME}/Dropbox:1" "${HOME}/go/src:1" "${HOME}/Developer:2")
 
   projects=()
-  for root in ${project_roots[@]}; do
-    if [ -d $root ]; then
-      for dir in $(find ${root} -maxdepth 1 -type d); do
-        if [ -d ${dir}/.git ]; then
+  local project scan_depth
+  for project_scan in ${project_scans[@]}; do
+    IFS=: read -r project scan_depth <<<"${project_scan}"
+    if [[ -d ${project} ]]; then
+      for dir in $(find ${project} -maxdepth ${scan_depth} -type d); do
+        if [[ -d ${dir}/.git ]]; then
           projects+=(${dir})
         fi
       done
     fi
   done
 
-  # Scan Developer directory with depth 2
-  developer_root=${HOME}/Developer
-  mkdir -p ${developer_root}
-  for dir in $(find ${developer_root} -maxdepth 2 -type d); do
-    if [[ -d ${dir}/.git ]]; then
-      projects+=(${dir})
-    fi
-  done
-
   local IFS=$'\n'
   selected_project=$(echo "${projects[*]}" | fzf)
+
   cd ${selected_project}
 }
 alias pp=fzf_projects
