@@ -1,5 +1,8 @@
-title: Get your imenu ready for modern Javascript date: 2017-12-29 tags: [emacs, imenu] categories: emacs
-
+---
+title: Get your imenu ready for modern Javascript
+date: 2017-12-29
+tags: [emacs, imenu]
+categories: emacs
 ---
 
 # Introduction
