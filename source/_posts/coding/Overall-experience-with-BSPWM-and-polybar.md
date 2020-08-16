@@ -1,6 +1,6 @@
 ---
 title: Overall experience with BSPWM and polybar
-cover: "https://github.com/ztlevi/Dotfiles/blob/master/assets/screenshots/terminal.jpg?raw=true"
+cover: "https://github.com/ztlevi/Dotfiles/blob/master/screenshots/terminal.jpg?raw=true"
 preview: 300
 date: 2020-04-03 16:34:23
 categories: coding
