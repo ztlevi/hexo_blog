@@ -1,5 +1,5 @@
 language: node_js
-node_js: stable
+node_js: 12
 cache:
   directories:
     - node_modules
@@ -8,9 +8,8 @@ cache:
 install:
   - npm install
 
-
 #before_script:
- # - npm install -g gulp
+# - npm install -g gulp
 
 script:
   - hexo clean && hexo g
@@ -34,5 +33,5 @@ branches:
   only:
     - master
 env:
- global:
-   - GH_REF: github.com/ztlevi/ztlevi.github.io.git
+  global:
+    - GH_REF: github.com/ztlevi/ztlevi.github.io.git
