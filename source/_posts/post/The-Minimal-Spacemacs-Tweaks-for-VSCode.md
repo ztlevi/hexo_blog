@@ -2,25 +2,34 @@
 title: Spacemacs/Space-Vim Config for VSCode
 date: 2017-12-02 00:35:26
 categories: post
-tags: [spacemacs, vscode, space, intellij idea, pycharm, webstorm]
+tags:
+  - spacemacs
+  - vscode
+  - space
+  - intellij idea
+  - pycharm
+  - webstorm
 ---
 
 # The space way
 
 ## Leader key
 
-Using <kbd>space</kbd> key as the leader is a very popular way of editing, navigation and commanding. There is never an
-easy way to get used to new shortcuts, but trust me, you would definitely like it once you use it.
+Using <kbd>space</kbd> key as the leader is a very popular way of editing, navigation and
+commanding. There is never an easy way to get used to new shortcuts, but trust me, you would
+definitely like it once you use it.
 
 ## Sticky key
 
-Think about how you invoke commands in VSCode before. When you want to call the `command-palette`, you need to put your
-left hand's two fingers on <kbd>Ctrl + Shift</kbd> key or <kbd>Command + Shift</kbd> key and press <kbd>p</kbd>. And
-note that it's a key chord combination when you actually press these keys.
+Think about how you invoke commands in VSCode before. When you want to call the `command-palette`,
+you need to put your left hand's two fingers on <kbd>Ctrl + Shift</kbd> key or <kbd>Command +
+Shift</kbd> key and press <kbd>p</kbd>. And note that it's a key chord combination when you actually
+press these keys.
 
-This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim's normal or visual mode. And by saying
-<kbd>Space Space</kbd>, it's a sticky key bindings which means you just type <kbd>space</kbd> key twice in sequence. And
-you can just set your hands as the default typing position shown in this picture.
+This looks so stupid when you compare it with just <kbd>Space Space</kbd> in Vim's normal or visual
+mode. And by saying <kbd>Space Space</kbd>, it's a sticky key bindings which means you just type
+<kbd>space</kbd> key twice in sequence. And you can just set your hands as the default typing
+position shown in this picture.
 
 <!--more-->
 
@@ -30,21 +39,23 @@ you can just set your hands as the default typing position shown in this picture
 
 Well, now you probably get the point of using <kbd>space</kbd> key. But there is more of it.
 
-Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like <kbd>space
-f</kbd>(file related commands). For example, <kbd>space f f</kbd> go to the explorer, <kbd>space f s</kbd>save file and
-<kbd>space f S</kbd>save all. In this case, you won't mess up with these keys because they have the same prefix
-<kbd>space f</kbd>.
+Since sticky keys are just key sequences, you can cluster a lot of similar commands to a prefix like
+<kbd>space f</kbd>(file related commands). For example, <kbd>space f f</kbd> go to the explorer,
+<kbd>space f s</kbd>save file and <kbd>space f S</kbd>save all. In this case, you won't mess up with
+these keys because they have the same prefix <kbd>space f</kbd>.
 
 # The hybrid editing mode
 
 ## Insert mode
 
-Spacemacs has a hybrid mode that takes the normal and visual modes' key bindings from Vim while still using the general
-Emacs key bindings in insert mode. To be honest, it's super smart way of editing.
+Spacemacs has a hybrid mode that takes the normal and visual modes' key bindings from Vim while
+still using the general Emacs key bindings in insert mode. To be honest, it's super smart way of
+editing.
 
-The Unix key bindings (<kbd>C-a</kbd>->home, <kbd>C-e</kbd>->end, <kbd>C-b</kbd>->back, <kbd>C-f</kbd>->forward,
-<kbd>C-n</kbd>->next line, <kbd>C-p</kbd>->last line) work in almost every Mac application. You probably never find out
-they work out of box in your Mac or Linux, but many of your guys don't know about it.
+The Unix key bindings (<kbd>C-a</kbd>->home, <kbd>C-e</kbd>->end, <kbd>C-b</kbd>->back,
+<kbd>C-f</kbd>->forward, <kbd>C-n</kbd>->next line, <kbd>C-p</kbd>->last line) work in almost every
+Mac application. You probably never find out they work out of box in your Mac or Linux, but many of
+your guys don't know about it.
 
 So, why the hell people want to use Unix key bindings in their machines?
 
@@ -52,12 +63,13 @@ There are many reasons:
 
 1.  Your Mac does not has the <kbd>home</kbd>, <kbd>end</kbd> key like a full keyboard.
 2.  It's a much faster way for navigation once you get used to it
-3.  Be more consistent about the key bindings. They work in terminal, intellij IDEA, even Wechat. So why not use it
-    everywhere.
+3.  Be more consistent about the key bindings. They work in terminal, intellij IDEA, even Wechat. So
+    why not use it everywhere.
 
 ## Normal & visual mode
 
-As for the normal and visual mode, They are pretty much the same. But they can do much more now in space way.
+As for the normal and visual mode, They are pretty much the same. But they can do much more now in
+space way.
 
 > Note: The leader key is <kbd>space</kbd>
 
@@ -75,8 +87,8 @@ As for the normal and visual mode, They are pretty much the same. But they can d
 
 # To use it
 
-1.  Add the following configuration in your VSCode's `User Setting` (You can find out how to get to the `User Setting`
-    [over here](https://code.visualstudio.com/docs/getstarted/settings)).
+1.  Add the following configuration in your VSCode's `User Setting` (You can find out how to get to
+    the `User Setting` [over here](https://code.visualstudio.com/docs/getstarted/settings)).
 
 ```json
 {

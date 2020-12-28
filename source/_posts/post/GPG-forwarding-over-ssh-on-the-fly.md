@@ -2,7 +2,11 @@
 title: GPG forwarding over ssh on the fly
 date: 2020-12-27 17:57:33
 categories: coding
-tags: gpp, ssh
+tags:
+  - gpp
+  - ssh
+cover: https://wiki.trezor.io/images/Gnupg_logo.svg.png
+preview: 300
 ---
 
 I've been seeking for GPG solutions over server side VS client side for a while. It's so hard to
@@ -16,6 +20,8 @@ the server side request in the client side.
 The idea is to forward your client sidse GPG socket to your server side, so that every time you
 trigger a GPG authentication in server side, it can pop the GPG authentication GUI (pinentry
 program) in your local machine.
+
+<!--more-->
 
 ## Steps
 

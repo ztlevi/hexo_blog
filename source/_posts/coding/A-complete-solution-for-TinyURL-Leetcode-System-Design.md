@@ -1,12 +1,14 @@
 ---
 title: A complete solution for TinyURL (Leetcode System Design)
 categories: coding
-tags: [leetcode, coding]
+tags:
+  - leetcode
+  - coding
 date: 2017-07-13 18:02:06
 ---
 
-Note: The solution is translated from the Segmentfault post over [here](https://segmentfault.com/a/1190000006140476).
-Thanks for liuqi627.
+Note: The solution is translated from the Segmentfault post over
+[here](https://segmentfault.com/a/1190000006140476). Thanks for liuqi627.
 
 # Question Description
 
@@ -41,8 +43,8 @@ Write 100, Read 1K
 
 Storage is not the problem for this kind of system. Service like Netflix may have storage issues.
 
-Through SN analysis, we could have a big picture of the system. In general, this system is not hard and could be handled
-by a single SSD Machine.
+Through SN analysis, we could have a big picture of the system. In general, this system is not hard
+and could be handled by a single SSD Machine.
 
 # A: API
 
@@ -56,9 +58,11 @@ Only one service: URLService
 - Web Layer:
 - REST API:
 - GET: /{short_url}, return a http redirect response(301)
-- POST: goo.gl method - [google shorten URL](https://developers.google.com/url-shortener/v1/getting_started#actions)
+- POST: goo.gl method -
+  [google shorten URL](https://developers.google.com/url-shortener/v1/getting_started#actions)
 
-Request Body: {url=longUrl} e.g. {"longUrl": "http://www.google.com/"} Return OK(200), short_url is included in the data
+Request Body: {url=longUrl} e.g. {"longUrl": "http://www.google.com/"} Return OK(200), short_url is
+included in the data
 
 # K: Data Access
 
@@ -68,13 +72,14 @@ Request Body: {url=longUrl} e.g. {"longUrl": "http://www.google.com/"} Return OK
 
 1. Does it need to support transactions? NoSQL does not support transaction.
 2. Do we need rich SQL query? NoSQL does not support as many queries as SQL.
-3. Pursue development efficiency? Most Web Framework supports SQL database very well (with ORM). It means fewer codes
-   for the system.
-4. Do we need to use AUTO_INCREMENT ID? NoSQL couldn't do this. It only has a global unique Object_id.
-5. Does the system has a high requirement for QPS? NoSQL has high performance. For example, Memcached's QPS could reach
-   million level, MondoDB does 10K level, MySQL only supports K level.
-6. How high is the system's scalability? SQL requires developers write their codes to scale, while NoSQL comes with them
-   (sharding, replica).
+3. Pursue development efficiency? Most Web Framework supports SQL database very well (with ORM). It
+   means fewer codes for the system.
+4. Do we need to use AUTO_INCREMENT ID? NoSQL couldn't do this. It only has a global unique
+   Object_id.
+5. Does the system has a high requirement for QPS? NoSQL has high performance. For example,
+   Memcached's QPS could reach million level, MondoDB does 10K level, MySQL only supports K level.
+6. How high is the system's scalability? SQL requires developers write their codes to scale, while
+   NoSQL comes with them (sharding, replica).
 
 ### Answer:
 
@@ -101,16 +106,17 @@ OK, let's talk about the system algorithm. There are following solutions:
 
    http://site.douban.com/chuan -> dff85871a72c73c3eae09e39ffe97aea63047094
 
-These two algorithms could make sure hash values are randomly distributed, but the conflicts are inevitable. Any hash
-algorithm could have inevitable conflicts.
+These two algorithms could make sure hash values are randomly distributed, but the conflicts are
+inevitable. Any hash algorithm could have inevitable conflicts.
 
 - Pros: Simple. We could take the first 6 chars of the converted string.
 - Cons: Conflicts.
 
-  Solutions: 1. use (long_url + timestamp) as the hash function key. 2. When conflicts, regenerates the hash value(it's
-  different because timestamp changes).
+  Solutions: 1. use (long_url + timestamp) as the hash function key. 2. When conflicts, regenerates
+  the hash value(it's different because timestamp changes).
 
-  Overall, when urls are over 1 billion, there would be a lot of conflicts and the efficiency could be very low.
+  Overall, when urls are over 1 billion, there would be a lot of conflicts and the efficiency could
+  be very low.
 
 2. base62 Take short_url as a 62 base notation. 6 bits could represent 62^6=57 billion.
 
@@ -188,13 +194,13 @@ Browser <-> Web <-> Core <-> DB
 
 ### Improve the response speed between web server and database
 
-Use Memcached to improve response speed. When getting long_url, search in the cache first, then database. We could put
-90% read request on the cache.
+Use Memcached to improve response speed. When getting long_url, search in the cache first, then
+database. We could put 90% read request on the cache.
 
 ### Improve the response speed between web server and user's browser
 
-Different locations use different web server and cache server. All the areas share a DB used to match the users to the
-closest web server (through DNS) when they have a miss on the cache.
+Different locations use different web server and cache server. All the areas share a DB used to
+match the users to the closest web server (through DNS) when they have a miss on the cache.
 
 ## What if we need one more MySQL machine?
 
@@ -224,19 +230,19 @@ So, we do not use global auto_increment_id.
 
 The pro way is put the sharding key as the first byte of the short_url.
 
-Another way is to use consistent hashing to break the cycle into 62 pieces. It doesn't matter how many pieces because
-there probably would not be over 62 machines (it could be 360 or whatever). Each machine is responsible for the service
-in the part of the cycle.
+Another way is to use consistent hashing to break the cycle into 62 pieces. It doesn't matter how
+many pieces because there probably would not be over 62 machines (it could be 360 or whatever). Each
+machine is responsible for the service in the part of the cycle.
 
-write long_url -> hash(long_url)%62 -> put long_url to the specific machine according to hash value -> generate
-short_url on this machine -> return short_url
+write long_url -> hash(long_url)%62 -> put long_url to the specific machine according to hash value
+-> generate short_url on this machine -> return short_url
 
-short_url request -> get the sharding key (first byte of the short_url) -> search in the corresponding machine based on
-sharding key -> return long_url
+short_url request -> get the sharding key (first byte of the short_url) -> search in the
+corresponding machine based on sharding key -> return long_url
 
 Each time we add a new machine, put half of the range of the most used machine to the new machine.
 
 # More Optimization
 
-Put Chinese DB in China, American DB in the United States. Use geographical information as the sharding key, e.g. 0 for
-Chinese websites, 1 for American websites.
+Put Chinese DB in China, American DB in the United States. Use geographical information as the
+sharding key, e.g. 0 for Chinese websites, 1 for American websites.
