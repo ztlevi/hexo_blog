@@ -1,0 +1,62 @@
+# Header Menu
+menu:
+  Home: /
+  Archives: /archives
+  # change github and email values to your own addresses
+  Github: https://github.com/ztlevi
+  ML_Questions: https://ztlevi.github.io/Gitbook_Machine_Learning_Questions/
+  About: /about
+  扯淡: /categories/nonsense
+rss: /atom.xml
+
+# Set# Se to false to disable banner
+use_header_cover: true
+
+# URL of the banner image
+# Put your custom banner image under
+# the theme's img folder: your-blog/themes/minimal-dual/source/img/
+# and modify index_cover's value like so:
+# index_cover: /img/your-custom-banner.jpg
+# or
+# Put your custom banner image under
+# your blog's images folder: your-blog/source/images/
+# and modify index_cover's value like so:
+# index_cover: /images/your-custom-banner.jpg
+# or
+# Specify an online resource like so:
+# index_cover: http://somewhere.com/path/to/banner.jpg
+index_cover: /img/banner.jpg
+
+links:
+  - title: "My Github"
+    url: http://www.github.com/ztlevi
+    icon: "fa fa-github fa-2x"
+  - title: "My LinkedIn"
+    url: http://www.linkedin.com/in/ztlevi
+    icon: "fa fa-linkedin fa-2x"
+  - title: "My RSS"
+    url: /atom.xml
+    icon: "fa fa-rss fa-2x"
+  - title: "My Twitter"
+    url: https://twitter.com/ztlevi
+    icon: "fa fa-twitter fa-2x"
+  - title: "My Facebook"
+    url: https://facebook.com/ztlevi
+    icon: "fa fa-facebook fa-2x"
+
+widgets:
+- search
+- links
+- category
+- tags
+- recent_posts
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# favicon
+favicon: /favicon.png
+
+# Google Analytics Tracking ID
+google_analytics:
