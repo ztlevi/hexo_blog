@@ -1,6 +1,6 @@
 # This is my personal blog
 
-[![Build Status](https://travis-ci.org/ztlevi/hexo_blog.svg?branch=master)](https://travis-ci.org/ztlevi/hexo_blog)
+[![Deploy](https://github.com/ztlevi/ztlevi.github.io/actions/workflows/hexo-deploy.yml/badge.svg)](https://github.com/ztlevi/ztlevi.github.io/actions/workflows/hexo-deploy.yml)
 
 Visit at ztlevi.github.io
 
