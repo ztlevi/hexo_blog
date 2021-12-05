@@ -72,7 +72,7 @@ theme: aero-dual
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ztlevi/ztlevi.github.io
+  repo: git@github.com:ztlevi/ztlevi.github.io.git
   branch: master
 
 # Disqus
